@@ -1,0 +1,14 @@
+.home-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #154360;
+    height: calc(100vh - 80px);
+    color: white;
+}
+
+.home-text {
+    font-size: 6.5em;
+    color: white;
+    margin-top: 90px
+}

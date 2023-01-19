@@ -1,0 +1,14 @@
+.skills-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #010a0f;
+    height: 100vh;
+    color: white;
+}
+
+.skills-text {
+    font-size: 6.5em;
+    color: white;
+    margin-top: 10px
+}
