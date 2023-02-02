@@ -1,24 +1,51 @@
 .header-container {
-    height: 80px;
-    background: #eeeeee;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 80px;
+  background: #101010;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* #263238 */
+
+.nav-box-border {
+  opacity: 90%;
+  width: 150px;
+  /* font-weight: bold; */
+
+  text-align: center;
+  user-select: none;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+
+  border-radius: 3px;
 }
 
 .nav-box {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    min-width: 50px;
-    text-align: center;
+  padding: 10px;
+
+  background-color: #101010;
+  /* clip-path: inset(1px); */
+  border-radius: 3px;
+  clip-path: inset(0px 0px -1px 0px);
+  transition: clip-path 1s;
+  font-size: 1.4em;
 }
 
 .nav-box:hover {
-    background-color: #999999;
+  /* background-color: #999999; */
+  cursor: pointer;
+  clip-path: inset(0px 0px 1.7px 0px);
 }

@@ -2,9 +2,12 @@ body {
   margin: 0;
   position: relative;
   min-height: calc(100vh);
+  font-family: "Poligon", sans-serif;
 }
 
 .site-container {
   margin-top: -80px;
   padding-bottom: 90px;
 }
+
+@import url("https://fonts.cdnfonts.com/css/poligon");

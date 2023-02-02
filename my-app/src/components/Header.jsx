@@ -23,18 +23,24 @@ function Header() {
   return (
     <div>
       <nav className="header-container">
-        <span className='nav-box'>
-          About
-        </span>
-        <span className='nav-box'>
-          Projects
-        </span>
-        <span className='nav-box'>
-          Skills
-        </span>
-        <span className='nav-box'>
-          About
-        </span>
+        <div className='nav-box-border'>
+          <div className='nav-box'>
+            PROJECTS
+          </div>
+        </div>
+
+        <div className='nav-box-border'>
+          <div className='nav-box'>
+            SKILLS
+          </div>
+        </div>
+
+        <div className='nav-box-border'>
+          <div className='nav-box'>
+            CONTACT
+          </div>
+        </div>
+
 
         {/* {width >= 800 ? (
             <span style={navigationStyle}>

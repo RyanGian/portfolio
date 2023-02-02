@@ -5,8 +5,12 @@ function Contact() {
   return (
     <div className='contact-container'>
         <div className="contact-text">
-            Contact
+            CONTACT
         </div>
+        {/* <div className="body">
+          <div class="sample"></div>
+        </div> */}
+
     </div>
   );
 }
