@@ -3,9 +3,10 @@
   text-align: center;
   position: relative;
   background-color: #28282b;
-  height: 100vh;
+  /* height: 1300px; */
   color: white;
   user-select: none;
+  padding-bottom: 100px;
 }
 
 .projects-text {
@@ -23,7 +24,7 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.projects-sample-container-1 {
+/* .projects-sample-container-1 {
   width: 320px;
   height: 270px;
   margin: auto;
@@ -47,7 +48,7 @@
   height: 180px;
   border-radius: 5px;
   display: inline-block;
-}
+} */
 
 .projects-sample-image-text {
   align-items: left;

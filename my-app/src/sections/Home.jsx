@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className='home-container'>
       <div className="text-container">
-      <div className="golden-border">
+      <div className="colour-border">
         <div className="name-container">
           RYAN GIAN
         </div>
