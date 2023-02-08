@@ -1,0 +1,39 @@
+.right-side-bar-container {
+  /* background-color: aliceblue; */
+  width: 60px;
+  position: fixed;
+  z-index: 2;
+  height: calc(100vh - 80px);
+  left: 0;
+  margin: auto;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 20px;
+
+  /* Sticks to bottom of div */
+  position: absolute;
+  width: 60px;
+  bottom: 0px;
+}
+
+.line {
+  /* position: absolute; */
+
+  height: 20vh;
+  /* margin-top: -170px; */
+
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.icon {
+  color: white;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

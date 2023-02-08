@@ -2,7 +2,8 @@
   width: 100%;
   text-align: center;
   position: relative;
-  background-color: #343434;
+  /* background-color: #343434; */
+  background-color: #101010;
   /* height: 100vh; */
   color: white;
   user-select: none;

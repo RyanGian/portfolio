@@ -2,7 +2,8 @@
   width: 100%;
   text-align: center;
   position: relative;
-  background-color: #36454f;
+  /* background-color: #36454f; */
+  background-color: #101010;
   height: calc(100vh - 90px);
   color: white;
   user-select: none;
