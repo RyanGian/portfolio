@@ -8,15 +8,16 @@ import a from "../assets/sat1.png";
 import b from "../assets/maze1.png";
 import c from "../assets/s3.PNG";
 import ProjectToggle from "../components/ProjectToggle";
+import SectionHeader from "../components/SectionHeader";
 
 function Projects() {
   const [projectTab, setProjectTab] = React.useState('personal');
   // Personal or Uni
   return (
     <div className='projects-container'>
-        <div className="projects-text">
-            PROJECTS
-        </div>
+      <SectionHeader text={'PROJECTS'}/>
+
+
         <ProjectToggle setProjectTab={setProjectTab}/>
         {(projectTab === 'personal') ?
           <>

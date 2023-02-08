@@ -11,13 +11,12 @@ import cssLogo from "../assets/skillsIcons/css-icon.png"
 import pythonLogo from "../assets/skillsIcons/python-icon.png"
 import nodejsLogo from "../assets/skillsIcons/node-js-icon.png"
 import bootstrapLogo from "../assets/skillsIcons/bootstrap-icon.png"
+import SectionHeader from "../components/SectionHeader";
 
 function Skills() {
   return (
     <div className='skills-container'>
-        <div className="skills-text">
-            SKILLS
-        </div>
+        <SectionHeader text={'SKILLS'}/>
         <div className="skills-display-container">
           <div className="skills-display-text">Languages, Frameworks and libraries I've used</div>
         </div>
