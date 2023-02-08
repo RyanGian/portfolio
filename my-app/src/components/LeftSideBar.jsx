@@ -8,14 +8,20 @@ function LeftSideBar() {
       <div className="icon-container">
         <div className="line"></div>
         <div className="icon">
-          <MdEmail size={30} />
+          <MdEmail />
         </div>
         <div className="icon">
-          <BsLinkedin size={30} />
+          <BsLinkedin />
         </div>
 
         <div className="icon">
-          <BsGithub size={30} />
+          <BsGithub />
+        </div>
+        <div className="page-pill">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
     </div>

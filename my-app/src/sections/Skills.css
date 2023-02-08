@@ -27,7 +27,7 @@
 }
 
 .skills-display-container {
-  margin-top: 120px;
+  margin-top: 100px;
   /* height: 1000px; */
 }
 
@@ -43,7 +43,8 @@
   column-gap: 25px;
 
   /* height: 200px; */
-  width: 500px;
+  width: 600px;
+  z-index: 5;
 }
 
 .image {
@@ -54,3 +55,7 @@
   margin-top: 225px;
   width: 100%;
 }
+
+/* .prop-icon {
+  font-size: 2rem;
+} */

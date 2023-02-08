@@ -22,14 +22,40 @@
 }
 
 .line {
-  height: 20vh;
+  height: 10vh;
   border-left: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .icon {
+  /* color: #ee7752; */
+  /* color: rgb(255, 215, 137); */
   color: white;
+  font-size: 30px;
 }
 
 .icon:hover {
   cursor: pointer;
+  transform: scale(1.2);
+}
+
+.page-pill {
+  position: absolute;
+  bottom: 0;
+  background-color: #28282b;
+  width: 20px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0px;
+}
+
+.dot {
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 15px;
 }

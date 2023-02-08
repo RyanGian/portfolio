@@ -1,6 +1,6 @@
 .skill-box-container {
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   border: 1px white solid;
   margin: auto;
   margin-top: 100px;
@@ -9,15 +9,20 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   overflow: hidden;
+  /* background-color: whitesmoke; */
 }
 
 .skill-image {
   margin-top: 13px;
-  height: 35px;
   height: 45px;
 }
 
 .skill-text {
   bottom: 0;
   font-size: 1.3em;
+  color: whitesmoke;
+}
+
+.prop-icon {
+  margin-top: 13px;
 }
