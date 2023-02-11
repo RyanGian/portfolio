@@ -1,4 +1,4 @@
-import './Header.css';
+import "./Header.css";
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 // import logo from "./assets/logo.png";
@@ -21,28 +21,20 @@ function Header() {
   //     margin: "30px",
   //   };
   return (
-    <div>
-      <nav className="header-container">
-        <div className='nav-box-border'>
-          <div className='nav-box'>
-            PROJECTS
-          </div>
-        </div>
+    <div className="header-container">
+      <div className="nav-box-border">
+        <div className="nav-box">PROJECTS</div>
+      </div>
 
-        <div className='nav-box-border'>
-          <div className='nav-box'>
-            SKILLS
-          </div>
-        </div>
+      <div className="nav-box-border">
+        <div className="nav-box">SKILLS</div>
+      </div>
 
-        <div className='nav-box-border'>
-          <div className='nav-box'>
-            CONTACT
-          </div>
-        </div>
+      <div className="nav-box-border">
+        <div className="nav-box">CONTACT</div>
+      </div>
 
-
-        {/* {width >= 800 ? (
+      {/* {width >= 800 ? (
             <span style={navigationStyle}>
               <Link to="/">Home</Link>|<Link to="/blanko">Blanko</Link>|
               <Link to="/slido">Slido</Link>|<Link to="/tetro">Tetro</Link>
@@ -54,7 +46,6 @@ function Header() {
               <Link to="/slido">S</Link>|<Link to="/tetro">T</Link>
             </span>
         )} */}
-      </nav>
     </div>
   );
 }

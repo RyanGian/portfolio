@@ -1,8 +1,9 @@
 .project-toggle-container {
-  padding-top: 100px;
+  padding-top: 80px;
   margin: auto;
   display: flex;
   justify-content: center;
+  padding-bottom: 120px;
 }
 
 .personal-projects-tab {
