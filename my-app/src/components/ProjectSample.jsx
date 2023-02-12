@@ -87,6 +87,7 @@ const DescriptionContainer = styled.div`
   background-color: #555454;
   margin-left: ${(props) => (props.right ? "20px" : "20px")};
   margin-top: 15px;
+
   }
 `;
 
