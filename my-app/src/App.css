@@ -10,4 +10,7 @@ body {
   padding-bottom: 60px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 @import url("https://fonts.cdnfonts.com/css/poligon");

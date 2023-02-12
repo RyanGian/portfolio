@@ -40,7 +40,7 @@
   /* clip-path: inset(1px); */
   border-radius: 3px;
   clip-path: inset(0px 0px -1px 0px);
-  transition: clip-path 0.8s;
+  transition: clip-path 0.3s;
   font-size: 1.4em;
 }
 

@@ -17,7 +17,7 @@ function Projects() {
   const [projectTab, setProjectTab] = React.useState("personal");
   // Personal or Uni
   return (
-    <div className="projects-container">
+    <div className="projects-container" name="Projects">
       <SectionHeader text={"PROJECTS"} />
 
       <ProjectToggle setProjectTab={setProjectTab} />

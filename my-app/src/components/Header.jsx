@@ -17,20 +17,45 @@ function Header() {
     setWindowWidth(width);
   };
 
-  //   const navigationStyle = {
-  //     margin: "30px",
-  //   };
+  let Scroll = require("react-scroll");
+  let scroller = Scroll.scroller;
+
+  function handleScroll(name) {
+    scroller.scrollTo(name, {
+      duration: 100,
+      smooth: true,
+      offset: 0,
+    });
+  }
+
   return (
     <div className="header-container">
-      <div className="nav-box-border">
+      <div
+        className="nav-box-border"
+        onClick={() => {
+          handleScroll("Projects");
+        }}
+      >
         <div className="nav-box">PROJECTS</div>
       </div>
 
       <div className="nav-box-border">
-        <div className="nav-box">SKILLS</div>
+        <div
+          className="nav-box"
+          onClick={() => {
+            handleScroll("Skills");
+          }}
+        >
+          SKILLS
+        </div>
       </div>
 
-      <div className="nav-box-border">
+      <div
+        className="nav-box-border"
+        onClick={() => {
+          handleScroll("Contact");
+        }}
+      >
         <div className="nav-box">CONTACT</div>
       </div>
 

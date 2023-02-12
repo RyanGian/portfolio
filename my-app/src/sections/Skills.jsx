@@ -19,8 +19,9 @@ const SkillsContainer = styled.div`
   width: 100%;
   text-align: center;
   position: relative;
-  /* background-color: #343434; */
+
   background-color: #101010;
+  // background-color: #343434;
   /* height: 100vh; */
   color: white;
   user-select: none;
@@ -49,7 +50,7 @@ const SkillsDisplayFlexbox = styled.div`
 
 function Skills() {
   return (
-    <SkillsContainer>
+    <SkillsContainer name="Skills">
       <SectionHeader text={"SKILLS"} />
       <SkillsText>Languages, Frameworks and libraries I've used</SkillsText>
 
