@@ -1,6 +1,5 @@
 import React from "react";
-import "./Skills.css";
-import logo from "../assets/waves1.png";
+import styled from "styled-components";
 import SkillBox from "../components/SkillBox";
 
 import javaLogo from "../assets/skillsIcons/java-icon.svg";
@@ -16,17 +15,45 @@ import flaskLogo from "../assets/skillsIcons/flask-icon.svg";
 import materialuiLogo from "../assets/skillsIcons/materialui-icon.svg";
 import SectionHeader from "../components/SectionHeader";
 
+const SkillsContainer = styled.div`
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* background-color: #343434; */
+  background-color: #101010;
+  /* height: 100vh; */
+  color: white;
+  user-select: none;
+  /* margin-bottom: 100px; */
+  padding-bottom: 100px;
+  }
+`;
+
+const SkillsText = styled.div`
+  margin-top: 100px;
+  font-size: 1.5em;
+  }
+`;
+
+const SkillsDisplayFlexbox = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  column-gap: 25px;
+  /* height: 200px; */
+  width: 600px;
+  z-index: 3;
+  }
+`;
+
 function Skills() {
   return (
-    <div className="skills-container">
+    <SkillsContainer>
       <SectionHeader text={"SKILLS"} />
-      <div className="skills-display-container">
-        <div className="skills-display-text">
-          Languages, Frameworks and libraries I've used
-        </div>
-      </div>
+      <SkillsText>Languages, Frameworks and libraries I've used</SkillsText>
 
-      <div className="skills-display-flexbox">
+      <SkillsDisplayFlexbox>
         <SkillBox icon={javaLogo} skillText={"Java"} />
         <SkillBox icon={javascriptLogo} skillText={"Javascript"} />
         <SkillBox icon={pythonLogo} skillText={"Python"} />
@@ -38,14 +65,8 @@ function Skills() {
         <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
-      </div>
-
-      {/* <img
-            className="image"
-            src={ logo }
-            alt="logos"
-          ></img> */}
-    </div>
+      </SkillsDisplayFlexbox>
+    </SkillsContainer>
   );
 }
 

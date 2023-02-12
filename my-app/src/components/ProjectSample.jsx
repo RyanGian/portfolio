@@ -10,6 +10,10 @@ const Container = styled.div`
   justify-content: center;
   padding-bottom: 180px;
 
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
+
   }
 `;
 
