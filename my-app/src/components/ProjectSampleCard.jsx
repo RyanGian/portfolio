@@ -14,6 +14,11 @@ const Container = styled.div`
   //   transform: scale(1.1);
   // }
 
+  a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
+
   }
 `;
 
@@ -113,7 +118,7 @@ const Languages = styled.div`
   }
 `;
 
-const ProjectSample = (props) => {
+const ProjectSampleCard = (props) => {
   return (
     <Container>
       <ImageContainer right={props.alternate} left={props.alternate}>
@@ -129,8 +134,23 @@ const ProjectSample = (props) => {
           <h4>{props.application}</h4>
           {props.redirect && (
             <>
-              <RiGithubFill className="github-logo" />
-              <RiExternalLinkLine className="link-logo" />
+              <a
+                href={props.gitHubLink}
+                className="open-button"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <RiGithubFill className="github-logo" />
+              </a>
+
+              <a
+                href={props.siteLink}
+                className="open-button"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <RiExternalLinkLine className="link-logo" />
+              </a>
             </>
           )}
         </Title>
@@ -145,13 +165,15 @@ const ProjectSample = (props) => {
   );
 };
 
-export default ProjectSample;
+export default ProjectSampleCard;
 
-ProjectSample.propTypes = {
+ProjectSampleCard.propTypes = {
   title: PropTypes.string,
   subtext: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.any,
   alternate: PropTypes.bool,
   redirect: PropTypes.bool,
+  gitHubLink: PropTypes.string,
+  siteLink: PropTypes.string,
 };

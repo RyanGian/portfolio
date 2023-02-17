@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 
-import ProjectSample from "../components/ProjectSample";
+import ProjectSampleCard from "../components/ProjectSampleCard";
 import sample1 from "../assets/projects-personal/personal-site.PNG";
 import sample2 from "../assets/projects-personal/personal-visualiser.png";
 
@@ -20,10 +20,10 @@ function Projects() {
     <div className="projects-container" name="Projects">
       <SectionHeader text={"PROJECTS"} />
 
-      <ProjectToggle setProjectTab={setProjectTab} />
+      <ProjectToggle projectTab={projectTab} setProjectTab={setProjectTab} />
       {projectTab === "personal" ? (
         <>
-          <ProjectSample
+          <ProjectSampleCard
             image={sample1}
             title={"Personal Portfolio Website"}
             description={
@@ -35,8 +35,9 @@ function Projects() {
             }
             alternate={false}
             redirect={true}
+            gitHubLink={"https://github.com/RyanGian/Ryan-Portfolio"}
           />
-          <ProjectSample
+          <ProjectSampleCard
             image={sample2}
             title={"Visualise Your Chrome Extension Analytics"}
             description={
@@ -46,11 +47,17 @@ function Projects() {
             language={"HTML \xa0 CSS \xa0 Javascript \xa0 Bootstrap"}
             alternate={true}
             redirect={true}
+            gitHubLink={
+              "https://github.com/Imogi/Chrome-extension-total-installs"
+            }
+            siteLink={
+              "https://chrome.google.com/webstore/detail/visualise-chrome-extensio/pkcchhcoebopcidgmiefbglbohfdcamo"
+            }
           />
         </>
       ) : (
         <>
-          <ProjectSample
+          <ProjectSampleCard
             image={uni1}
             title={"Back in Blackout"}
             description={
@@ -60,17 +67,17 @@ function Projects() {
             language={"Java"}
             alternate={true}
           />
-          <ProjectSample
+          <ProjectSampleCard
             image={uni2}
             title={"Dungeon Mania"}
             description={
-              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program. Continued persistence through different saves of the game."
+              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (Continued persistence through different saves of the game)."
             }
             application={"Backend"}
             language={"Java"}
             alternate={false}
           />
-          <ProjectSample
+          <ProjectSampleCard
             image={uni3}
             title={"AirBrB"}
             description={
@@ -82,7 +89,7 @@ function Projects() {
             }
             alternate={true}
           />
-          <ProjectSample
+          <ProjectSampleCard
             image={uni4}
             title={"Seams"}
             description={
@@ -92,7 +99,7 @@ function Projects() {
             language={"Python \xa0 Flask"}
             alternate={false}
           />
-          <ProjectSample
+          <ProjectSampleCard
             image={uni5}
             title={"Slackr"}
             description={

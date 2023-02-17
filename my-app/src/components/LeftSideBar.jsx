@@ -7,22 +7,38 @@ function LeftSideBar() {
     <div className="right-side-bar-container">
       <div className="icon-container">
         <div className="line"></div>
-        <div className="icon">
-          <MdEmail />
-        </div>
+
+        <a
+          href="mailto:ryan3gian@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div className="icon">
+            <MdEmail />
+          </div>
+        </a>
+
         <div className="icon">
           <BsLinkedin />
         </div>
 
-        <div className="icon">
-          <BsGithub />
-        </div>
-        <div className="page-pill">
+        <a
+          href={"https://github.com/RyanGian"}
+          className="open-button"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className="icon">
+            <BsGithub />
+          </div>
+        </a>
+
+        {/* <div className="page-pill">
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

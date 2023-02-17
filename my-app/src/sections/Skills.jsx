@@ -24,7 +24,7 @@ const SkillsContainer = styled.div`
   // background-color: #343434;
   /* height: 100vh; */
   color: white;
-  user-select: none;
+  // user-select: none;
   /* margin-bottom: 100px; */
   padding-bottom: 100px;
   }
