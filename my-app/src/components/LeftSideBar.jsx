@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 function LeftSideBar() {
   return (
-    <div className="right-side-bar-container">
+    <div className="left-side-bar-container">
       <div className="icon-container">
         <div className="line"></div>
 

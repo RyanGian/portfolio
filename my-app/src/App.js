@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        <Header className="header" />
         <LeftSideBar />
         <div className="site-container">
           <Home />
