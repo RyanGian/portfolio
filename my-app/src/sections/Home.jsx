@@ -22,7 +22,7 @@ function Home() {
         </div>
 
         <div className="profile-container">
-          Hi! I am currently a CS student at UNSW.
+          Hi! I am currently a Computer Science student at UNSW.
         </div>
       </div>
 

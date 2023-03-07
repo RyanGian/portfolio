@@ -30,9 +30,7 @@ function Projects() {
               "This site! A personal portfolio page I have created to showcase my own projects, own skills, and contact information."
             }
             application={"Front End"}
-            language={
-              "HTML \xa0 CSS \xa0 Javascript \xa0 React \xa0 Styled Components"
-            }
+            language={"HTML \xa0 CSS \xa0 Javascript \xa0 React"}
             alternate={false}
             redirect={true}
             gitHubLink={"https://github.com/RyanGian/Ryan-Portfolio"}
