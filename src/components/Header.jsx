@@ -1,21 +1,22 @@
 import "./Header.css";
-import React, { useState } from "react";
+// import React, { useState } from "react";
+
 // import { Link } from "react-router-dom";
 // import logo from "./assets/logo.png";
 
 function Header() {
-  const [width, setWindowWidth] = useState(0);
-  React.useEffect(() => {
-    updateDimensions();
+  // const [width, setWindowWidth] = useState(0);
+  // React.useEffect(() => {
+  //   updateDimensions();
 
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
+  //   window.addEventListener("resize", updateDimensions);
+  //   return () => window.removeEventListener("resize", updateDimensions);
+  // }, []);
 
-  const updateDimensions = () => {
-    const width = window.innerWidth;
-    setWindowWidth(width);
-  };
+  // const updateDimensions = () => {
+  //   const width = window.innerWidth;
+  //   setWindowWidth(width);
+  // };
 
   let Scroll = require("react-scroll");
   let scroller = Scroll.scroller;
