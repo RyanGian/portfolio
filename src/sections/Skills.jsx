@@ -56,7 +56,7 @@ function Skills() {
   return (
     <SkillsContainer name="Skills">
       <SectionHeader text={"SKILLS"} />
-      <SkillsText>Languages, Frameworks and libraries I've used</SkillsText>
+      <SkillsText>Languages, and Tech I've used</SkillsText>
 
       <SkillsDisplayFlexbox>
         <SkillBox icon={javaLogo} skillText={"Java"} />

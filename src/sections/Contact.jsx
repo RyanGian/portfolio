@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const ContactText = styled.div`
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   font-size: 1.5em;
   width: 500px;
   }
@@ -20,6 +20,7 @@ function Contact() {
         <div>
           If you have any opportunities, questions or just want to say hello, my
           inbox is always open!
+          ryan1gian@gmail.com
         </div>
       </ContactText>
       <div className="email-redirect">
