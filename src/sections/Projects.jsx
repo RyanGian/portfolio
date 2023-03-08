@@ -55,27 +55,7 @@ function Projects() {
         </>
       ) : (
         <>
-          <ProjectSampleCard
-            image={uni1}
-            title={"Back in Blackout"}
-            description={
-              "Built a Java program using Object-Oriented design processes. Gained experience in creating a Java program that incorporated multiple interacting classes. Developed critical solving skills and experience with Java Libraries."
-            }
-            application={"Backend"}
-            language={"Java"}
-            alternate={true}
-          />
-          <ProjectSampleCard
-            image={uni2}
-            title={"Dungeon Mania"}
-            description={
-              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (Continued persistence through different saves of the game)."
-            }
-            application={"Backend"}
-            language={"Java"}
-            alternate={false}
-          />
-          <ProjectSampleCard
+         <ProjectSampleCard
             image={uni3}
             title={"AirBrB"}
             description={
@@ -86,6 +66,27 @@ function Projects() {
               "HTML \xa0 CSS \xa0 Javascript \xa0 React \xa0 Bootstrap \xa0 Cypress"
             }
             alternate={true}
+          />
+           <ProjectSampleCard
+            image={uni5}
+            title={"Slackr"}
+            description={
+              "Built a messaging/communications site (only frontend component) similar to the popular messaging tool slack. Backend was provided. Frontend interacted with a RESTful API HTTP backend (given backend built as a NodeJS express server). Used HTTP requests using fetch API and promises to dynamically manipulate the DOM without requiring full page reload. Using these processes, SPAs (single-page applications) are generated, rendered, and updated using JavaScript. Hence, all changes of application state are essentially modifications to the DOM."
+            }
+            application={"Frontend"}
+            language={"HTML \xa0 CSS \xa0 Vanilla Javascript "}
+            alternate={true}
+          />
+
+          <ProjectSampleCard
+            image={uni2}
+            title={"Dungeon Mania"}
+            description={
+              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (Continued persistence through different saves of the game)."
+            }
+            application={"Backend"}
+            language={"Java"}
+            alternate={false}
           />
           <ProjectSampleCard
             image={uni4}
@@ -98,13 +99,13 @@ function Projects() {
             alternate={false}
           />
           <ProjectSampleCard
-            image={uni5}
-            title={"Slackr"}
+            image={uni1}
+            title={"Back in Blackout"}
             description={
-              "Built a messaging/communications site (only frontend component) similar to the popular messaging tool slack. Backend was provided. Frontend interacted with a RESTful API HTTP backend (given backend built as a NodeJS express server). Used HTTP requests using fetch API and promises to dynamically manipulate the DOM without requiring full page reload. Using these processes, SPAs (single-page applications) are generated, rendered, and updated using JavaScript. Hence, all changes of application state are essentially modifications to the DOM."
+              "Built a Java program using Object-Oriented design processes. Gained experience in creating a Java program that incorporated multiple interacting classes. Developed critical solving skills and experience with Java Libraries. Began to familarise with UML diagrams."
             }
-            application={"Frontend"}
-            language={"HTML \xa0 CSS \xa0 Vanilla Javascript "}
+            application={"Backend"}
+            language={"Java"}
             alternate={true}
           />
         </>

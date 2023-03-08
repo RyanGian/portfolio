@@ -18,7 +18,7 @@ const Container = styled.footer`
 const Footer = () => {
   return (
     <Container>
-      <div>Ryan Gian | 2023</div>
+      <div>Designed & Built by Ryan Gian | 2023 | ryan1gian@gmail.com</div>
     </Container>
   );
 };

@@ -8,6 +8,7 @@ import htmlLogo from "../assets/skillsIcons/html-icon.svg";
 import reactLogo from "../assets/skillsIcons/react-icon.svg";
 import javascriptLogo from "../assets/skillsIcons/javascript-icon.svg";
 import cssLogo from "../assets/skillsIcons/css-icon.svg";
+import cplusplusLogo from "../assets/skillsIcons/cplusplus-icon.svg";
 import pythonLogo from "../assets/skillsIcons/python-icon.svg";
 import nodejsLogo from "../assets/skillsIcons/nodejs-icon.svg";
 import bootstrapLogo from "../assets/skillsIcons/bootstrap-icon.svg";
@@ -38,13 +39,16 @@ const SkillsText = styled.div`
 
 const SkillsDisplayFlexbox = styled.div`
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   margin: auto;
   column-gap: 25px;
   /* height: 200px; */
   width: 600px;
   z-index: 3;
+
   }
 `;
 
@@ -56,12 +60,13 @@ function Skills() {
 
       <SkillsDisplayFlexbox>
         <SkillBox icon={javaLogo} skillText={"Java"} />
-        <SkillBox icon={javascriptLogo} skillText={"Javascript"} />
         <SkillBox icon={pythonLogo} skillText={"Python"} />
         <SkillBox icon={cLogo} skillText={"C"} />
-        <SkillBox icon={reactLogo} skillText={"React"} />
+        <SkillBox icon={cplusplusLogo} skillText={"C++"} />
+        <SkillBox icon={javascriptLogo} skillText={"Javascript"} />
         <SkillBox icon={htmlLogo} skillText={"HTML"} />
         <SkillBox icon={cssLogo} skillText={"CSS"} />
+        <SkillBox icon={reactLogo} skillText={"React"} />
         <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
         <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
