@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import React, { useEffect, useState } from "react";
 import { RiGithubFill, RiExternalLinkLine } from "react-icons/ri";
 
 const Container = styled.div`
@@ -23,24 +24,9 @@ const Container = styled.div`
 `;
 
 // #a9a9a9
-const ImageContainer = styled.div`
-  border: 1px solid #555454;
-  border-radius: 5px;
-  width: 450px;
-  height: 260px;
-  margin-right: ${(props) => (props.right ? "250px" : "-310px")};
-  overflow: hidden;
-  color: #a9a9a9;
-  }
-`;
 
-const SampleImage = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  opacity: 0.6;
-}
-`;
+
+
 
 const TextContainer = styled.div`
  //border: 1px solid yellow;
@@ -118,10 +104,53 @@ const Languages = styled.div`
   }
 `;
 
+
+
+
+const ImageContainer = styled.div`
+  border: 1px solid #555454;
+  border-radius: 5px;
+  width: 450px;
+  height: 260px;
+  margin-right: ${(props) => (props.right ? "250px" : "-310px")};
+  overflow: hidden;
+  color: #a9a9a9;
+  // @media (max-width: 900px) {
+  //   width: ${(props) => (props.width/2)+"px"};
+  //   height: ${(props) => ( props.height/2)+"px" - "260px" };
+  // }
+}
+`;
+
+const SampleImage = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+`;
+
 const ProjectSampleCard = (props) => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  let resizeWindow = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    resizeWindow();
+    window.addEventListener("resize", resizeWindow);
+    return () => window.removeEventListener("resize", resizeWindow);
+  }, []);
+
+
+
   return (
     <Container>
-      <ImageContainer right={props.alternate} left={props.alternate}>
+      {windowWidth >= 1000 ?
+      <>
+      <ImageContainer width={windowWidth} height = {windowHeight} right={props.alternate} left={props.alternate}>
         <SampleImage
           className="project-sample-image"
           src={props.image}
@@ -161,6 +190,12 @@ const ProjectSampleCard = (props) => {
         </DescriptionContainer>
         <Languages right={props.alternate}>{props.language}</Languages>
       </TextContainer>
+      </>
+      :
+      <>s</>
+      }
+
+
     </Container>
   );
 };

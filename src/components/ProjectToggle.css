@@ -1,15 +1,11 @@
 .project-toggle-container {
+  position: relative;
+  z-index: 6;
   padding-top: 80px;
   margin: auto;
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
-}
-
-.personal-projects-tab {
-}
-
-.uni-projects-tab {
 }
 
 .active {
@@ -18,9 +14,8 @@
 
 .tab-box {
   width: 150px;
-
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 1.5em;
 }
 
@@ -31,4 +26,29 @@
 .tab-box:not(.active):hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+@media (max-width: 750px) {
+  .project-toggle-container {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+
+  .tab-box {
+    width: 125px;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-toggle-container {
+    padding-top: 20px;
+    padding-bottom: 120px;
+  }
+
+  .tab-box {
+    width: 90px;
+    font-size: 0.9em;
+  }
 }

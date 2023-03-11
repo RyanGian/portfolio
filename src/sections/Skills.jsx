@@ -23,7 +23,7 @@ const SkillsContainer = styled.div`
 
   background-color: #101010;
   // background-color: #343434;
-  /* height: 100vh; */
+  height: 90vh;
   color: white;
   // user-select: none;
   /* margin-bottom: 100px; */
@@ -32,8 +32,26 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillsText = styled.div`
+  position: relative;
+  z-index: 6;
   margin-top: 100px;
   font-size: 1.5em;
+  margin-bottom: 60px;
+  @media (max-width: 850px) {
+    margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    margin-top: 50px;
+    font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    font-size: 1em;
+    }
   }
 `;
 
@@ -42,12 +60,32 @@ const SkillsDisplayFlexbox = styled.div`
   // display: flex;
   // flex-wrap: wrap;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   margin: auto;
-  column-gap: 25px;
+  gap: 3em;
   /* height: 200px; */
   width: 600px;
   z-index: 3;
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    width: 550px;
+    gap: 3em;
+    }
+   }
+
+   @media (max-width: 800px) {
+     grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+     width: 400px;
+     gap: 2.7em;
+     }
+   }
+
+   @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    width: 300px;
+    gap: 1.2em;
+    }
+  }
 
   }
 `;
@@ -72,6 +110,7 @@ function Skills() {
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
       </SkillsDisplayFlexbox>
+
     </SkillsContainer>
   );
 }

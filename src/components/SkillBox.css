@@ -3,7 +3,6 @@
   width: 110px;
   border: 1px white solid;
   margin: auto;
-  margin-top: 100px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -14,7 +13,10 @@
 
 .skill-image {
   margin-top: 13px;
-  height: 45px;
+}
+
+img {
+  height: 50px;
 }
 
 .skill-text {
@@ -25,4 +27,51 @@
 
 .prop-icon {
   margin-top: 13px;
+}
+
+@media (max-width: 850px) {
+  .skill-box-container {
+    height: 100px;
+    width: 100px;
+
+  }
+
+  img {
+    height: 45px;
+  }
+
+  .skill-text {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .skill-box-container {
+    height: 90px;
+    width: 90px;
+
+  }
+
+  img {
+    height: 40px;
+  }
+
+  .skill-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 750px) {
+  .skill-box-container {
+    height: 75px;
+    width: 75px;
+  }
+
+  img {
+    height: 35px;
+  }
+
+  .skill-text {
+    font-size: 0.9em;
+  }
 }

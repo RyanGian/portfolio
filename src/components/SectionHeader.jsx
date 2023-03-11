@@ -5,10 +5,11 @@ function SectionHeader(props) {
   return (
     <>
     <div className="section-header-container">
-        <div className="header-text">
-            {props.text}
-        </div>
-    <div className="line-break"></div></div>
+      <div className="header-text">
+          {props.text}
+      </div>
+      <div className="line-break"></div>
+    </div>
     </>
   );
 }

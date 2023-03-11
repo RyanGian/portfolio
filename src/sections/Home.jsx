@@ -26,11 +26,6 @@ function Home() {
         </div>
       </div>
 
-      {/* <img
-            className="image"
-            src={ logo }
-            alt="logos"
-          ></img> */}
       <div
         className="below-the-fold-scroll-container "
         onClick={() => {

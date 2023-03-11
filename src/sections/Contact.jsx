@@ -8,6 +8,24 @@ const ContactText = styled.div`
   margin-top: 80px;
   font-size: 1.5em;
   width: 500px;
+
+  @media (max-width: 850px) {
+    margin-top: 80px;
+    font-size: 1.3em;
+    width: 500px;
+  }
+
+  @media (max-width: 750px) {
+    margin-top: 80px;
+    font-size: 1.2em;
+    width: 450px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 80px;
+    font-size: 1.1em;
+    width: 350px;
+  }
   }
 `;
 
