@@ -9,7 +9,7 @@ function LeftSideBar() {
         <div className="line"></div>
 
         <a
-          href="mailto:ryan3gian@gmail.com"
+          href="mailto:ryan1gian@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -18,9 +18,16 @@ function LeftSideBar() {
           </div>
         </a>
 
-        <div className="icon">
-          <BsLinkedin />
-        </div>
+        <a
+          href={"https://www.linkedin.com/in/ryan-gian/"}
+          className="open-button"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div className="icon">
+            <BsLinkedin />
+          </div>
+        </a>
 
         <a
           href={"https://github.com/RyanGian"}

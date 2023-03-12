@@ -43,7 +43,7 @@ function Contact() {
       </ContactText>
       <div className="email-redirect">
         <a
-          href="mailto:ryan3gian@gmail.com"
+          href="mailto:ryan1gian@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
         >

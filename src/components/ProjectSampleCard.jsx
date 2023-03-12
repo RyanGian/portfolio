@@ -109,12 +109,7 @@ const Languages = styled.div`
   @media (max-width: 550px) {
     font-size: 0.9em;
   }
-
-
 `;
-
-
-
 
 const ImageContainer = styled.div`
   @media (min-width: 1000px) {
@@ -395,27 +390,25 @@ const ProjectSampleCard = (props) => {
         <Title right={props.alternate}>
           <h1>{props.title}</h1>
           <h4>{props.application}</h4>
-          {props.redirect && (
-            <>
-              <a
-                href={props.gitHubLink}
-                className="open-button"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <RiGithubFill className="github-logo" />
-              </a>
+          {props.redirectGithublink && (
+            <a
+              href={props.gitHubLink}
+              className="open-button"
+              rel="noreferrer"
+              target="_blank"
+             >
+            <RiGithubFill className="github-logo" />
+          </a>)}
 
-              <a
-                href={props.siteLink}
-                className="open-button"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <RiExternalLinkLine className="link-logo" />
-              </a>
-            </>
-          )}
+          {props.redirectLink && (
+            <a
+              href={props.siteLink}
+              className="open-button"
+              rel="noreferrer"
+              target="_blank"
+            >
+            <RiExternalLinkLine className="link-logo" />
+          </a>)}
         </Title>
         <DescriptionContainer right={props.alternate}>
           <DescriptionText right={props.alternate}>
@@ -430,27 +423,28 @@ const ProjectSampleCard = (props) => {
          <ResizeTextContainer>
           <ResizeTitle><b >{props.title}</b></ResizeTitle>
           <ResizeApplication><b className="float-left">{props.application}</b></ResizeApplication>
-          {props.redirect && (
-            <ResizeLinks>
+          <ResizeLinks>
+            {props.redirectGithublink && (
               <a
                 href={props.gitHubLink}
                 className="open-button float-left"
                 rel="noreferrer"
                 target="_blank"
               >
-                <RiGithubFill className="github-logo" />
-              </a>
+              <RiGithubFill className="github-logo" />
+              </a>)}
 
+            {props.redirectLink && (
               <a
                 href={props.siteLink}
                 className="open-button float-left"
                 rel="noreferrer"
                 target="_blank"
               >
-                <RiExternalLinkLine className="link-logo" />
-              </a>
-            </ResizeLinks>
-          )}
+              <RiExternalLinkLine className="link-logo" />
+            </a>)}
+          </ResizeLinks>
+
           <ResizeDescription><div className="float-left">{props.description}</div></ResizeDescription>
           <Languages>{props.language}</Languages>
         </ResizeTextContainer>

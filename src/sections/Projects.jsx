@@ -32,8 +32,9 @@ function Projects() {
             application={"Front End"}
             language={"HTML \xa0 CSS \xa0 Javascript \xa0 React"}
             alternate={false}
-            redirect={true}
+            redirectGithublink={true}
             gitHubLink={"https://github.com/RyanGian/Ryan-Portfolio"}
+            redirectLink={false}
           />
           <ProjectSampleCard
             image={sample2}
@@ -44,10 +45,11 @@ function Projects() {
             application={"Chrome Extension"}
             language={"HTML \xa0 CSS \xa0 Javascript \xa0 Bootstrap"}
             alternate={true}
-            redirect={true}
+            redirectGithublink={true}
             gitHubLink={
               "https://github.com/Imogi/Chrome-extension-total-installs"
             }
+            redirectLink={true}
             siteLink={
               "https://chrome.google.com/webstore/detail/visualise-chrome-extensio/pkcchhcoebopcidgmiefbglbohfdcamo"
             }
@@ -75,7 +77,7 @@ function Projects() {
             }
             application={"Frontend"}
             language={"HTML \xa0 CSS \xa0 Vanilla Javascript "}
-            alternate={true}
+            alternate={false}
           />
 
           <ProjectSampleCard
@@ -86,7 +88,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Java"}
-            alternate={false}
+            alternate={true}
           />
           <ProjectSampleCard
             image={uni4}

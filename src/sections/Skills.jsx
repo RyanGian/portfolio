@@ -14,6 +14,9 @@ import nodejsLogo from "../assets/skillsIcons/nodejs-icon.svg";
 import bootstrapLogo from "../assets/skillsIcons/bootstrap-icon.svg";
 import flaskLogo from "../assets/skillsIcons/flask-icon.svg";
 import materialuiLogo from "../assets/skillsIcons/materialui-icon.svg";
+import arduinoLogo from "../assets/skillsIcons/arduino-icon.svg";
+import rLogo from "../assets/skillsIcons/r-icon.svg";
+
 import SectionHeader from "../components/SectionHeader";
 
 const SkillsContainer = styled.div`
@@ -23,11 +26,11 @@ const SkillsContainer = styled.div`
 
   background-color: #101010;
   // background-color: #343434;
-  height: 90vh;
+  // height: 90vh;
   color: white;
   // user-select: none;
   /* margin-bottom: 100px; */
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   }
 `;
 
@@ -56,6 +59,7 @@ const SkillsText = styled.div`
 `;
 
 const SkillsDisplayFlexbox = styled.div`
+  //border: 1px solid blue;
   position: relative;
   // display: flex;
   // flex-wrap: wrap;
@@ -63,6 +67,7 @@ const SkillsDisplayFlexbox = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   margin: auto;
   gap: 3em;
+
   /* height: 200px; */
   width: 600px;
   z-index: 3;
@@ -109,6 +114,9 @@ function Skills() {
         <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
+        <SkillBox icon={arduinoLogo} skillText={"Arduino"} />
+        <SkillBox icon={rLogo} skillText={"R"} />
+
       </SkillsDisplayFlexbox>
 
     </SkillsContainer>
