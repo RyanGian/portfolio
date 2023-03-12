@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a252dee8.css",
-    "main.js": "/portfolio/static/js/main.49891c21.js",
+    "main.js": "/portfolio/static/js/main.c90ce4ee.js",
     "static/js/787.7de8f4a0.chunk.js": "/portfolio/static/js/787.7de8f4a0.chunk.js",
     "static/media/back-in-blackout.png": "/portfolio/static/media/back-in-blackout.b3e4df0bd7abce8cc017.png",
     "static/media/seams.PNG": "/portfolio/static/media/seams.66e44a8b7b4aaeb0e858.PNG",
@@ -11,12 +11,12 @@
     "static/media/personal-site.PNG": "/portfolio/static/media/personal-site.b40c1fe1259fc136975b.PNG",
     "static/media/slackr.PNG": "/portfolio/static/media/slackr.04f51dc933c3ee2e49cf.PNG",
     "static/media/flask-icon.svg": "/portfolio/static/media/flask-icon.83debdc31548c0e752cffe715d3755e8.svg",
+    "static/media/nodejs-icon.svg": "/portfolio/static/media/nodejs-icon.a67c953a91ce41e47dc66f836152f773.svg",
     "static/media/arduino-icon.svg": "/portfolio/static/media/arduino-icon.8d542083db2bf8094261adade26cea1e.svg",
     "static/media/react-icon.svg": "/portfolio/static/media/react-icon.75d7e9862123e2cfa80e6496db759e68.svg",
     "static/media/python-icon.svg": "/portfolio/static/media/python-icon.de425a21783d8c28883bfbd5948723c5.svg",
     "static/media/bootstrap-icon.svg": "/portfolio/static/media/bootstrap-icon.cbf16e6bbf59bfffdb7506c8f23e24a4.svg",
     "static/media/java-icon.svg": "/portfolio/static/media/java-icon.71f24e83e19b34838cac50c6f55a15fe.svg",
-    "static/media/nodejs-icon.svg": "/portfolio/static/media/nodejs-icon.3380025c6e99969aa64a630807c86638.svg",
     "static/media/r-icon.svg": "/portfolio/static/media/r-icon.2f61618656326f006e957e5c7fbbc0db.svg",
     "static/media/javascript-icon.svg": "/portfolio/static/media/javascript-icon.b54d0ecd66110d3973681666a0765dca.svg",
     "static/media/cplusplus-icon.svg": "/portfolio/static/media/cplusplus-icon.b5fa8aff4bf54c9d29bdc2d935b3a65f.svg",
@@ -26,11 +26,11 @@
     "static/media/html-icon.svg": "/portfolio/static/media/html-icon.3b77917d0e12e8e81ee053d3bf4b2a86.svg",
     "static/media/materialui-icon.svg": "/portfolio/static/media/materialui-icon.4746265bf0ea5418d5c02339832f6815.svg",
     "main.a252dee8.css.map": "/portfolio/static/css/main.a252dee8.css.map",
-    "main.49891c21.js.map": "/portfolio/static/js/main.49891c21.js.map",
+    "main.c90ce4ee.js.map": "/portfolio/static/js/main.c90ce4ee.js.map",
     "787.7de8f4a0.chunk.js.map": "/portfolio/static/js/787.7de8f4a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a252dee8.css",
-    "static/js/main.49891c21.js"
+    "static/js/main.c90ce4ee.js"
   ]
 }
