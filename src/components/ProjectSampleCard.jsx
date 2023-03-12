@@ -117,7 +117,6 @@ const Languages = styled.div`
 
 
 const ImageContainer = styled.div`
-  z-index: 1;
   @media (min-width: 1000px) {
     border: 1px solid #555454;
     border-radius: 5px;
@@ -228,6 +227,7 @@ const ResizeContainer = styled.div`
 
 const ResizeTextContainer = styled.div`
   position: absolute;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -333,7 +333,7 @@ const ResizeDescription = styled.div`
 const ResizeLinks = styled.div`
   margin-left: 5px;
   margin-top: 6px;
-  z-index: 5;
+
   .float-left {
     float: left;
     margin-left: 8px;
