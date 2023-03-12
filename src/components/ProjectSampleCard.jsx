@@ -100,10 +100,16 @@ const Languages = styled.div`
   height: 80px;
   margin-left: ${(props) => (props.right ? "140px" : "0px")};
   text-align: ${(props) => (props.right ? "right" : "left")};
+
   @media (max-width: 1000px) {
     margin-left: 15px;
     margin-top: 10px;
   }
+
+  @media (max-width: 550px) {
+    font-size: 0.9em;
+  }
+
 
 `;
 
@@ -111,6 +117,7 @@ const Languages = styled.div`
 
 
 const ImageContainer = styled.div`
+  z-index: 1;
   @media (min-width: 1000px) {
     border: 1px solid #555454;
     border-radius: 5px;
@@ -221,7 +228,6 @@ const ResizeContainer = styled.div`
 
 const ResizeTextContainer = styled.div`
   position: absolute;
-  z-layer: 10;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -270,7 +276,7 @@ const ResizeTitle = styled.div`
   }
 
   @media (max-width: 500px) {
-
+    font-size: 1.5em;
   }
 
 `;
@@ -299,8 +305,8 @@ const ResizeApplication = styled.div`
 
   }
 
-  @media (max-width: 500px) {
-
+  @media (max-width: 550px) {
+    font-size: 0.9em;
   }
 
 `;
@@ -319,12 +325,15 @@ const ResizeDescription = styled.div`
     font-size: 0.9em;
   }
 
+  @media (max-width: 430px) {
+    font-size: 0.75em;
+  }
 `;
 
 const ResizeLinks = styled.div`
   margin-left: 5px;
   margin-top: 6px;
-
+  z-index: 5;
   .float-left {
     float: left;
     margin-left: 8px;
