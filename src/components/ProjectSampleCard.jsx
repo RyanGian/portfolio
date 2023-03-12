@@ -93,7 +93,6 @@ const DescriptionText = styled.div`
 `;
 
 const Languages = styled.div`
-//  border: 1px solid green;
   opacity: 70%;
   margin-top: 15px;
   border-radius: 5px;
@@ -101,34 +100,260 @@ const Languages = styled.div`
   height: 80px;
   margin-left: ${(props) => (props.right ? "140px" : "0px")};
   text-align: ${(props) => (props.right ? "right" : "left")};
+  @media (max-width: 1000px) {
+    margin-left: 15px;
+    margin-top: 10px;
   }
+
 `;
 
 
 
 
 const ImageContainer = styled.div`
-  border: 1px solid #555454;
-  border-radius: 5px;
-  width: 450px;
-  height: 260px;
-  margin-right: ${(props) => (props.right ? "250px" : "-310px")};
-  overflow: hidden;
-  color: #a9a9a9;
-  // @media (max-width: 900px) {
-  //   width: ${(props) => (props.width/2)+"px"};
-  //   height: ${(props) => ( props.height/2)+"px" - "260px" };
-  // }
+  @media (min-width: 1000px) {
+    border: 1px solid #555454;
+    border-radius: 5px;
+    width: 450px;
+    height: 260px;
+    margin-right: ${(props) => (props.right ? "250px" : "-310px")};
+    color: #a9a9a9;
+    // @media (max-width: 900px) {
+    //   width: ${(props) => (props.width/2)+"px"};
+    //   height: ${(props) => ( props.height/2)+"px" - "260px" };
+    // }
+  }
+
+  @media (max-width: 1000px) {
+    border-radius: 5px;
+    position: relative;
+    //border: 1px solid green;
+    width: 60vw;
+    overflow:hidden;
+    height: 35vw;
+  }
+
+
+  @media (max-width: 800px) {
+    border-radius: 5px;
+    width: 65vw;
+    height: 50vw;
+    overflow:hidden;
+  }
+
+  @media (max-width: 700px) {
+    border-radius: 5px;
+    width: 70vw;
+    height: 70vw;
+    overflow:hidden;
+
+  }
+
+  @media (max-width: 500px) {
+    border-radius: 5px;
+    width: 70vw;
+    height: 90vw;
+    overflow:hidden;
+  }
 }
 `;
 
 const SampleImage = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  opacity: 0.6;
+  @media (min-width: 1000px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 1000px) {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+  }
+
+  @media (max-width: 800px) {
+    height: 100%;
+    border-radius: 5px;
+
+  }
+
+  @media (max-width: 700px) {
+    transform: scale(1.3);
+  }
+
+
+  @media (max-width: 600px) {
+    border-radius: 5px;
+    transform: scaleX(1.7);
+  }
 }
 `;
+
+const ResizeContainer = styled.div`
+  border: 1px solid #555454;
+  border-radius: 5px;
+  width: 60vw;
+  height: 35vw;
+
+  @media (max-width: 800px) {
+
+    width: 65vw;
+    height: 50vw;
+    overflow:hidden;
+  }
+
+
+  @media (max-width: 700px) {
+    width: 70vw;
+    height: 70vw;
+    overflow:hidden;
+  }
+
+  @media (max-width: 500px) {
+    width: 70vw;
+    height: 90vw;
+    overflow:hidden;
+  }
+
+`;
+
+const ResizeTextContainer = styled.div`
+  position: absolute;
+  z-layer: 10;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  //border: 1px solid blue;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    width: 60vw;
+  }
+
+
+  @media (max-width: 800px) {
+    width: 65vw;
+  }
+
+  @media (max-width: 700px) {
+    width: 70vw;
+  }
+
+  @media (max-width: 500px) {
+    width: 70vw;
+  }
+
+`;
+
+const ResizeTitle = styled.div`
+  padding-top: 10px;
+
+  font-size: 2em;
+  float: left;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 1000px) {
+
+  }
+
+
+  @media (max-width: 800px) {
+
+  }
+
+  @media (max-width: 700px) {
+
+  }
+
+  @media (max-width: 500px) {
+
+  }
+
+`;
+
+const ResizeApplication = styled.div`
+  font-size: 1em;
+  width: 100%;
+  float: right;
+  //border: 1px solid white;
+
+  .float-left {
+    float: left;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 1000px) {
+
+  }
+
+
+  @media (max-width: 800px) {
+
+  }
+
+  @media (max-width: 700px) {
+
+  }
+
+  @media (max-width: 500px) {
+
+  }
+
+`;
+
+const ResizeDescription = styled.div`
+  font-weight: 300;
+  width: 95%;
+  margin-top: 10px;
+
+  .float-left {
+    float: left;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 0.9em;
+  }
+
+`;
+
+const ResizeLinks = styled.div`
+  margin-left: 5px;
+  margin-top: 6px;
+
+  .float-left {
+    float: left;
+    margin-left: 8px;
+  }
+
+  .github-logo {
+    width: 25px;
+    height: 25px;
+
+  }
+
+  .github-logo:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+
+  .link-logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .link-logo:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+`;
+
+
+
 
 const ProjectSampleCard = (props) => {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -148,7 +373,7 @@ const ProjectSampleCard = (props) => {
 
   return (
     <Container>
-      {windowWidth >= 1000 ?
+      {windowWidth > 1000 ?
       <>
       <ImageContainer width={windowWidth} height = {windowHeight} right={props.alternate} left={props.alternate}>
         <SampleImage
@@ -192,10 +417,45 @@ const ProjectSampleCard = (props) => {
       </TextContainer>
       </>
       :
-      <>s</>
+      <ResizeContainer>
+         <ResizeTextContainer>
+          <ResizeTitle><b >{props.title}</b></ResizeTitle>
+          <ResizeApplication><b className="float-left">{props.application}</b></ResizeApplication>
+          {props.redirect && (
+            <ResizeLinks>
+              <a
+                href={props.gitHubLink}
+                className="open-button float-left"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <RiGithubFill className="github-logo" />
+              </a>
+
+              <a
+                href={props.siteLink}
+                className="open-button float-left"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <RiExternalLinkLine className="link-logo" />
+              </a>
+            </ResizeLinks>
+          )}
+          <ResizeDescription><div className="float-left">{props.description}</div></ResizeDescription>
+          <Languages>{props.language}</Languages>
+        </ResizeTextContainer>
+
+        <ImageContainer>
+          <SampleImage
+          className="project-sample-image"
+          src={props.image}
+          alt=""
+        /></ImageContainer>
+
+
+      </ResizeContainer>
       }
-
-
     </Container>
   );
 };

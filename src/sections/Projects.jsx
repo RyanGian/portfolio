@@ -111,7 +111,6 @@ function Projects() {
         </>
       )}
 
-      {/* <img className="image" src={logo} alt="logos"></img> */}
     </div>
   );
 }
