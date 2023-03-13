@@ -6,7 +6,7 @@ import sample1 from "../assets/projects-personal/personal-site.PNG";
 import sample2 from "../assets/projects-personal/personal-visualiser.png";
 
 import uni1 from "../assets/projects-uni/back-in-blackout.png";
-import uni2 from "../assets/projects-uni/dungeon-mania.png";
+import uni2 from "../assets/projects-uni/dungeon-mania.PNG";
 import uni3 from "../assets/projects-uni/airbrb.png";
 import uni4 from "../assets/projects-uni/seams.png";
 import uni5 from "../assets/projects-uni/slackr.PNG";
