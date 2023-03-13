@@ -187,7 +187,7 @@ const SampleImage = styled.img`
 
   @media (max-width: 600px) {
     border-radius: 5px;
-    transform: scaleX(1.7);
+    transform: scaleX(1.4);
   }
 }
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import SectionHeader from "../components/SectionHeader";
 import styled from "styled-components";
+import { SiMinutemailer } from "react-icons/si";
 
 const ContactText = styled.div`
   margin: auto;
@@ -38,7 +39,11 @@ function Contact() {
         <div>
           If you have any opportunities, questions or just want to say hello, my
           inbox is always open!
-          ryan1gian@gmail.com
+          <div className="email-container">
+            <span ><SiMinutemailer className="mail-icon"/></span>
+            <span>ryan1gian@gmail.com</span>
+          </div>
+
         </div>
       </ContactText>
       <div className="email-redirect">

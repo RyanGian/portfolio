@@ -7,8 +7,8 @@ import sample2 from "../assets/projects-personal/personal-visualiser.png";
 
 import uni1 from "../assets/projects-uni/back-in-blackout.png";
 import uni2 from "../assets/projects-uni/dungeon-mania.png";
-import uni3 from "../assets/projects-uni/airbrb.PNG";
-import uni4 from "../assets/projects-uni/seams.PNG";
+import uni3 from "../assets/projects-uni/airbrb.png";
+import uni4 from "../assets/projects-uni/seams.png";
 import uni5 from "../assets/projects-uni/slackr.PNG";
 import ProjectToggle from "../components/ProjectToggle";
 import SectionHeader from "../components/SectionHeader";
@@ -67,7 +67,7 @@ function Projects() {
             language={
               "HTML \xa0 CSS \xa0 Javascript \xa0 React \xa0 Bootstrap \xa0 Cypress"
             }
-            alternate={true}
+            alternate={false}
           />
            <ProjectSampleCard
             image={uni5}
@@ -76,7 +76,18 @@ function Projects() {
               "Built a messaging/communications site (only frontend component) similar to the popular messaging tool slack. Backend was provided. Frontend interacted with a RESTful API HTTP backend (given backend built as a NodeJS express server). Used HTTP requests using fetch API and promises to dynamically manipulate the DOM without requiring full page reload. Using these processes, SPAs (single-page applications) are generated, rendered, and updated using JavaScript. Hence, all changes of application state are essentially modifications to the DOM."
             }
             application={"Frontend"}
-            language={"HTML \xa0 CSS \xa0 Vanilla Javascript "}
+            language={"HTML \xa0 CSS \xa0 Javascript "}
+            alternate={true}
+          />
+
+          <ProjectSampleCard
+            image={uni4}
+            title={"Seams"}
+            description={
+              "Collaborated in a group of 5 to create a mock app of Microsoft Teams. Learnt to work together as a team by  managing, planning and allocating tasks/tickets to each team member. Developed experience in the software development lifecycle, testing, developing and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server according to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data. "
+            }
+            application={"Backend"}
+            language={"Python \xa0 Flask"}
             alternate={false}
           />
 
@@ -90,16 +101,7 @@ function Projects() {
             language={"Java"}
             alternate={true}
           />
-          <ProjectSampleCard
-            image={uni4}
-            title={"Seams"}
-            description={
-              "Collaborated in a group of 5 to create a mock app of Microsoft Teams. Learnt to work together as a team by  managing, planning and allocating tasks/tickets to each team member. Developed experience in the software development lifecycle, testing, developing and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server according to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data. "
-            }
-            application={"Backend"}
-            language={"Python \xa0 Flask"}
-            alternate={false}
-          />
+
           <ProjectSampleCard
             image={uni1}
             title={"Back in Blackout"}
@@ -108,7 +110,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Java"}
-            alternate={true}
+            alternate={false}
           />
         </>
       )}

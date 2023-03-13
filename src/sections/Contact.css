@@ -24,6 +24,19 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.email-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  padding-top: 10px;
+  padding-right: 5px;
+  height: 23px;
+  width: 23px;
+}
+
 .email-redirect {
   border-radius: 5px;
   margin: auto;
