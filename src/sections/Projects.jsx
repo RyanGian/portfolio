@@ -75,7 +75,7 @@ function Projects() {
             image={uni5}
             title={"Slackr"}
             description={
-              "Built a messaging/communications site (only frontend component) similar to the popular messaging tool slack. Backend was provided. Frontend interacted with a RESTful API HTTP backend (given backend built as a NodeJS express server). Used HTTP requests using fetch API and promises to dynamically manipulate the DOM without requiring full page reload. Using these processes, SPAs (single-page applications) are generated, rendered, and updated using JavaScript. Hence, all changes of application state are essentially modifications to the DOM."
+              "Built a messaging/communications site similar to the popular messaging tool slack. Frontend interacted with a RESTful API HTTP backend (given backend built as a NodeJS express server). Used HTTP requests using fetch API and promises to dynamically manipulate the DOM without requiring full page reload. Using these processes, SPAs (single-page applications) are generated, rendered, and updated using JavaScript. "
             }
             application={"Frontend"}
             language={"HTML \xa0 CSS \xa0 Javascript "}
@@ -86,7 +86,7 @@ function Projects() {
             image={uni4}
             title={"Seams"}
             description={
-              "Collaborated in a group of 5 to create a mock app of Microsoft Teams. Learnt to work together as a team by  managing, planning and allocating tasks/tickets to each team member. Developed experience in the software development lifecycle, testing, developing and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server according to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data. "
+              "Collaborated in a group of 5 to create a mock app of Microsoft Teams. Gained experience in the AGILE development lifecycle, testing, and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data. "
             }
             application={"Backend"}
             language={"Python \xa0 Flask"}
@@ -99,7 +99,7 @@ function Projects() {
               "A python program that was a Shell Script to Python transpiler. The program would automate this process, translating POSIX Shell code to Python. It would take Shell scripts as input and output Python code."
             }
             application={"Backend"}
-            language={"Python"}
+            language={"Python \xa0 Regex"}
             alternate={true}
           />
           <ProjectSampleCard
@@ -109,7 +109,7 @@ function Projects() {
               "Implemented Pigs, which was a simplified version control system of Git. Pigs stood for POSIX Implementation of Git in Shell. Had to replicate many git commands where these commands had to be implemented in POSIX-compatible Shell. Strengthened skills in regex, and file manipulation. This task reproduced the function of the staging area between the workspace and the repository aka the Git Index."
             }
             application={"Backend"}
-            language={"Shell"}
+            language={"Shell \xa0 Regex"}
             alternate={false}
           />
           <ProjectSampleCard
