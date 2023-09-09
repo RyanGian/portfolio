@@ -111,8 +111,8 @@ function Skills() {
         <SkillBox icon={htmlLogo} skillText={"HTML"} />
         <SkillBox icon={cssLogo} skillText={"CSS"} />
         <SkillBox icon={reactLogo} skillText={"React"} />
-        {/* <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} /> */}
-        {/* <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
+        {/* <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
+         <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
         <SkillBox icon={arduinoLogo} skillText={"Arduino"} />

@@ -10,6 +10,8 @@ import uni2 from "../assets/projects-uni/dungeon-mania.PNG";
 import uni3 from "../assets/projects-uni/airbrb.png";
 import uni4 from "../assets/projects-uni/seams.png";
 import uni5 from "../assets/projects-uni/slackr.PNG";
+import uni6 from "../assets/projects-uni/git.png";
+import uni7 from "../assets/projects-uni/transpiler.PNG";
 import ProjectToggle from "../components/ProjectToggle";
 import SectionHeader from "../components/SectionHeader";
 
@@ -57,7 +59,7 @@ function Projects() {
         </>
       ) : (
         <>
-         <ProjectSampleCard
+          <ProjectSampleCard
             image={uni3}
             title={"AirBrB"}
             description={
@@ -69,7 +71,7 @@ function Projects() {
             }
             alternate={false}
           />
-           <ProjectSampleCard
+          <ProjectSampleCard
             image={uni5}
             title={"Slackr"}
             description={
@@ -90,12 +92,31 @@ function Projects() {
             language={"Python \xa0 Flask"}
             alternate={false}
           />
-
+          <ProjectSampleCard
+            image={uni7}
+            title={"Sheepy"}
+            description={
+              "A python program that was a Shell Script to Python transpiler. The program would automate this process, translating POSIX Shell code to Python. It would take Shell scripts as input and output Python code."
+            }
+            application={"Backend"}
+            language={"Python"}
+            alternate={true}
+          />
+          <ProjectSampleCard
+            image={uni6}
+            title={"Pigs"}
+            description={
+              "Implemented Pigs, which was a simplified version control system of Git. Pigs stood for POSIX Implementation of Git in Shell. Had to replicate many git commands where these commands had to be implemented in POSIX-compatible Shell. Strengthened skills in regex, and file manipulation. This task reproduced the function of the staging area between the workspace and the repository aka the Git Index."
+            }
+            application={"Backend"}
+            language={"Shell"}
+            alternate={false}
+          />
           <ProjectSampleCard
             image={uni2}
             title={"Dungeon Mania"}
             description={
-              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (Continued persistence through different saves of the game)."
+              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (continued persistence through different saves of the game)."
             }
             application={"Backend"}
             language={"Java"}
@@ -114,7 +135,6 @@ function Projects() {
           />
         </>
       )}
-
     </div>
   );
 }

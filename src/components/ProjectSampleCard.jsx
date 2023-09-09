@@ -25,9 +25,6 @@ const Container = styled.div`
 
 // #a9a9a9
 
-
-
-
 const TextContainer = styled.div`
  //border: 1px solid yellow;
   border-radius: 5px;
@@ -120,8 +117,8 @@ const ImageContainer = styled.div`
     margin-right: ${(props) => (props.right ? "250px" : "-310px")};
     color: #a9a9a9;
     // @media (max-width: 900px) {
-    //   width: ${(props) => (props.width/2)+"px"};
-    //   height: ${(props) => ( props.height/2)+"px" - "260px" };
+    //   width: ${(props) => props.width / 2 + "px"};
+    //   height: ${(props) => props.height / 2 + "px" - "260px"};
     // }
   }
 
@@ -192,6 +189,7 @@ const SampleImage = styled.img`
 }
 `;
 
+// Resizes the container of the project cards depending on window size
 const ResizeContainer = styled.div`
   border: 1px solid #555454;
   border-radius: 5px;
@@ -199,25 +197,22 @@ const ResizeContainer = styled.div`
   height: 35vw;
 
   @media (max-width: 800px) {
-
     width: 65vw;
     height: 50vw;
-    overflow:hidden;
+    overflow: hidden;
   }
-
 
   @media (max-width: 700px) {
     width: 70vw;
     height: 70vw;
-    overflow:hidden;
+    overflow: hidden;
   }
 
   @media (max-width: 500px) {
     width: 70vw;
-    height: 90vw;
-    overflow:hidden;
+    height: 75vw;
+    overflow: hidden;
   }
-
 `;
 
 const ResizeTextContainer = styled.div`
@@ -234,7 +229,6 @@ const ResizeTextContainer = styled.div`
     width: 60vw;
   }
 
-
   @media (max-width: 800px) {
     width: 65vw;
   }
@@ -246,7 +240,6 @@ const ResizeTextContainer = styled.div`
   @media (max-width: 500px) {
     width: 70vw;
   }
-
 `;
 
 const ResizeTitle = styled.div`
@@ -258,22 +251,17 @@ const ResizeTitle = styled.div`
   margin: auto;
 
   @media (max-width: 1000px) {
-
   }
 
-
   @media (max-width: 800px) {
-
   }
 
   @media (max-width: 700px) {
-
   }
 
   @media (max-width: 500px) {
     font-size: 1.5em;
   }
-
 `;
 
 const ResizeApplication = styled.div`
@@ -288,22 +276,17 @@ const ResizeApplication = styled.div`
   }
 
   @media (max-width: 1000px) {
-
   }
 
-
   @media (max-width: 800px) {
-
   }
 
   @media (max-width: 700px) {
-
   }
 
   @media (max-width: 550px) {
     font-size: 0.9em;
   }
-
 `;
 
 const ResizeDescription = styled.div`
@@ -337,7 +320,6 @@ const ResizeLinks = styled.div`
   .github-logo {
     width: 25px;
     height: 25px;
-
   }
 
   .github-logo:hover {
@@ -356,9 +338,6 @@ const ResizeLinks = styled.div`
   }
 `;
 
-
-
-
 const ProjectSampleCard = (props) => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [windowHeight, setWindowHeight] = useState(0);
@@ -373,92 +352,104 @@ const ProjectSampleCard = (props) => {
     return () => window.removeEventListener("resize", resizeWindow);
   }, []);
 
-
-
   return (
     <Container>
-      {windowWidth > 1000 ?
-      <>
-      <ImageContainer width={windowWidth} height = {windowHeight} right={props.alternate} left={props.alternate}>
-        <SampleImage
-          className="project-sample-image"
-          src={props.image}
-          alt=""
-        />
-      </ImageContainer>
-      <TextContainer right={props.alternate} left={props.alternate}>
-        <Title right={props.alternate}>
-          <h1>{props.title}</h1>
-          <h4>{props.application}</h4>
-          {props.redirectGithublink && (
-            <a
-              href={props.gitHubLink}
-              className="open-button"
-              rel="noreferrer"
-              target="_blank"
-             >
-            <RiGithubFill className="github-logo" />
-          </a>)}
+      {windowWidth > 1000 ? (
+        <>
+          <ImageContainer
+            width={windowWidth}
+            height={windowHeight}
+            right={props.alternate}
+            left={props.alternate}
+          >
+            <SampleImage
+              className="project-sample-image"
+              src={props.image}
+              alt=""
+            />
+          </ImageContainer>
+          <TextContainer right={props.alternate} left={props.alternate}>
+            <Title right={props.alternate}>
+              <h1>{props.title}</h1>
+              <h4>{props.application}</h4>
+              {props.redirectGithublink && (
+                <a
+                  href={props.gitHubLink}
+                  className="open-button"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiGithubFill className="github-logo" />
+                </a>
+              )}
 
-          {props.redirectLink && (
-            <a
-              href={props.siteLink}
-              className="open-button"
-              rel="noreferrer"
-              target="_blank"
-            >
-            <RiExternalLinkLine className="link-logo" />
-          </a>)}
-        </Title>
-        <DescriptionContainer right={props.alternate}>
-          <DescriptionText right={props.alternate}>
-            {props.description}
-          </DescriptionText>
-        </DescriptionContainer>
-        <Languages right={props.alternate}>{props.language}</Languages>
-      </TextContainer>
-      </>
-      :
-      <ResizeContainer>
-         <ResizeTextContainer>
-          <ResizeTitle><b >{props.title}</b></ResizeTitle>
-          <ResizeApplication><b className="float-left">{props.application}</b></ResizeApplication>
-          <ResizeLinks>
-            {props.redirectGithublink && (
-              <a
-                href={props.gitHubLink}
-                className="open-button float-left"
-                rel="noreferrer"
-                target="_blank"
-              >
-              <RiGithubFill className="github-logo" />
-              </a>)}
+              {props.redirectLink && (
+                <a
+                  href={props.siteLink}
+                  className="open-button"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiExternalLinkLine className="link-logo" />
+                </a>
+              )}
+            </Title>
+            <DescriptionContainer right={props.alternate}>
+              <DescriptionText right={props.alternate}>
+                {props.description}
+              </DescriptionText>
+            </DescriptionContainer>
+            <Languages right={props.alternate}>{props.language}</Languages>
+          </TextContainer>
+        </>
+      ) : (
+        <ResizeContainer>
+          <ResizeTextContainer>
+            <ResizeTitle>
+              <b>{props.title}</b>
+            </ResizeTitle>
+            <ResizeApplication>
+              <b className="float-left">{props.application}</b>
+            </ResizeApplication>
+            <ResizeLinks>
+              {props.redirectGithublink && (
+                <a
+                  href={props.gitHubLink}
+                  className="open-button float-left"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiGithubFill className="github-logo" />
+                </a>
+              )}
 
-            {props.redirectLink && (
-              <a
-                href={props.siteLink}
-                className="open-button float-left"
-                rel="noreferrer"
-                target="_blank"
-              >
-              <RiExternalLinkLine className="link-logo" />
-            </a>)}
-          </ResizeLinks>
+              {props.redirectLink && (
+                <a
+                  href={props.siteLink}
+                  className="open-button float-left"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <RiExternalLinkLine className="link-logo" />
+                </a>
+              )}
+            </ResizeLinks>
 
-          <ResizeDescription><div className="float-left">{props.description}</div></ResizeDescription>
-          <Languages>{props.language}</Languages>
-        </ResizeTextContainer>
+            <ResizeDescription>
+              <div className="float-left">{props.description}</div>
+            </ResizeDescription>
+            <Languages>{props.language}</Languages>
+          </ResizeTextContainer>
 
-        <ImageContainer>
-          <SampleImage
-          className="project-sample-image"
-          src={props.image}
-          alt=""
-        /></ImageContainer>
-
-
-      </ResizeContainer>
-      }
+          <ImageContainer>
+            <SampleImage
+              className="project-sample-image"
+              src={props.image}
+              alt=""
+            />
+          </ImageContainer>
+        </ResizeContainer>
+      )}
     </Container>
   );
 };
