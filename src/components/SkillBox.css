@@ -33,7 +33,6 @@ img {
   .skill-box-container {
     height: 100px;
     width: 100px;
-
   }
 
   img {
@@ -48,8 +47,8 @@ img {
 @media (max-width: 800px) {
   .skill-box-container {
     height: 90px;
-    width: 90px;
-
+    max-width: 90px;
+    margin: 0 auto;
   }
 
   img {
