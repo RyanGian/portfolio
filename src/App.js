@@ -9,11 +9,18 @@ import Skills from "./sections/Skills.jsx";
 import Contact from "./sections/Contact.jsx";
 import LeftSideBar from "./components/LeftSideBar";
 
-import { MantineProvider } from "@mantine/core";
+import { createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Poligon",
+  },
+});
 
 function App() {
   return (
-    <MantineProvider>
+    <ThemeProvider theme={theme}>
       <div>
         <Header className="header" />
         <LeftSideBar />
@@ -26,7 +33,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </MantineProvider>
+    </ThemeProvider>
   );
 }
 

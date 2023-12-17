@@ -8,11 +8,9 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
 import Typography from "@mui/material/Typography";
+
 function Experience() {
   return (
     <div className="experience-container" name="Experience">
@@ -22,33 +20,11 @@ function Experience() {
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
-              align="right"
               variant="body2"
               color="text.secondary"
+              style={{ fontSize: "1.5rem" }}
             >
-              9:30 am
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
-                <FastfoodIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Eat
-              </Typography>
-              <Typography>Because you need strength</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
-              variant="body2"
-              color="text.secondary"
-            >
-              10:00 am
+              Nov 2023 -
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -57,41 +33,56 @@ function Experience() {
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Code
+            <TimelineContent sx={{ py: "20px", px: 2 }}>
+              <Typography variant="h4" component="span">
+                Software Engineer Intern
               </Typography>
-              <Typography>Because it&apos;s awesome!</Typography>
+              <Typography variant="h5">daisee</Typography>
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Morbi tempus iaculis urna id volutpat lacus laoreet non
+                curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
+                placerat orci nulla.
+              </Typography>
+              <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
+                {"\n"}
+              </Typography>
+              <Typography>
+                Tech Stack: Typescript, Next.js, Python, Haskell, AWS, Docker,
+                Postgresql
+              </Typography>
             </TimelineContent>
           </TimelineItem>
+
           <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant="body2"
+              color="text.secondary"
+              style={{ fontSize: "1.5rem" }}
+            >
+              2021 -
+            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary" variant="outlined">
-                <HotelIcon />
-              </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Sleep
-              </Typography>
-              <Typography>Because you need rest</Typography>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              <TimelineDot color="secondary">
-                <RepeatIcon />
+              <TimelineDot color="primary">
+                <LaptopMacIcon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
-              <Typography variant="h6" component="span">
-                Repeat
+            <TimelineContent sx={{ py: "50px", px: 2 }}>
+              <Typography variant="h4" component="span">
+                UNSW
               </Typography>
-              <Typography>Because this is the life you love!</Typography>
+
+              <Typography>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Morbi tempus iaculis urna id volutpat lacus laoreet non
+                curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
+                placerat orci nulla.
+              </Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
