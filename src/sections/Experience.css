@@ -1,0 +1,10 @@
+.experience-container {
+  width: 100%;
+  position: relative;
+  /* background-color: #101010; */
+  background-color: gray;
+  height: calc(100vh);
+  color: white;
+  text-align: center;
+  /* user-select: none; */
+}
