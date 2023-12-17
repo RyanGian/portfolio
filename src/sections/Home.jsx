@@ -30,7 +30,7 @@ function Home() {
       <div
         className="below-the-fold-scroll-container"
         onClick={() => {
-          handleScroll("Projects");
+          handleScroll("Experience");
         }}
       >
         <div className="scroll-pill">

@@ -2,15 +2,15 @@
   width: 100%;
   position: relative;
   background-color: brown;
-  /* background-color: #101010; */
+  background-color: #101010;
   min-height: calc(100vh);
   color: white;
   text-align: center;
   /* user-select: none; */
 }
 
-.x {
-  z-index: 10;
+.timeline-container {
   margin-top: 100px;
   padding-bottom: 50px;
+  font-size: small;
 }

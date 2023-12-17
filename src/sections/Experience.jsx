@@ -18,7 +18,8 @@ function Experience() {
   return (
     <div className="experience-container" name="Experience">
       <SectionHeader text={"EXPERIENCE"} />
-      <div className="x">
+
+      <div className="timeline-container">
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineOppositeContent
@@ -48,11 +49,11 @@ function Experience() {
               </Typography>
               <Typography variant="h5">daisee</Typography>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Morbi tempus iaculis urna id volutpat lacus laoreet non
                 curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
-                placerat orci nulla.
+                placerat orci nulla. */}
               </Typography>
               <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
                 {"\n"}
@@ -92,11 +93,10 @@ function Experience() {
               </Typography>
 
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Morbi tempus iaculis urna id volutpat lacus laoreet non
-                curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
-                placerat orci nulla.
+                Relevant Courses: Programming fundamentals, Software Engineering
+                Fundamentals, Software Construction, Object-Orientated Design &
+                Programming, Data Structures and Algorithms, Web Front-End
+                Programming, Advanced C++ Programming
               </Typography>
             </TimelineContent>
           </TimelineItem>
