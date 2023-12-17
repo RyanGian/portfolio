@@ -12,6 +12,8 @@ import uni4 from "../assets/projects-uni/seams.png";
 import uni5 from "../assets/projects-uni/slackr.PNG";
 import uni6 from "../assets/projects-uni/git.png";
 import uni7 from "../assets/projects-uni/transpiler.PNG";
+import uni8 from "../assets/projects-uni/tutormanager.PNG";
+
 import ProjectToggle from "../components/ProjectToggle";
 import SectionHeader from "../components/SectionHeader";
 
@@ -60,6 +62,18 @@ function Projects() {
       ) : (
         <>
           <ProjectSampleCard
+            image={uni8}
+            title={"Tutor Manager"}
+            description={
+              "Worked in a group of 5 to create a fully functional tutor manager website. Students would be able to find tutors and make bookings. Database was hosted on AWS. Utilised Flask as a web application framework to connect the backend ports to the frontend. Material-UI utilised for most frontend components."
+            }
+            application={"Fullstack"}
+            language={
+              "React \xa0 Python \xa0 PostgreSQL (Psycopg2) \xa0 Flask \xa0 AWS \xa0 CSS \xa0 HTML \xa0 Material-UI"
+            }
+            alternate={false}
+          />
+          <ProjectSampleCard
             image={uni3}
             title={"AirBrB"}
             description={
@@ -69,7 +83,7 @@ function Projects() {
             language={
               "HTML \xa0 CSS \xa0 Javascript \xa0 React \xa0 Bootstrap \xa0 Cypress"
             }
-            alternate={false}
+            alternate={true}
           />
           <ProjectSampleCard
             image={uni5}
@@ -79,7 +93,7 @@ function Projects() {
             }
             application={"Frontend"}
             language={"HTML \xa0 CSS \xa0 Javascript "}
-            alternate={true}
+            alternate={false}
           />
 
           <ProjectSampleCard
@@ -90,7 +104,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Python \xa0 Flask"}
-            alternate={false}
+            alternate={true}
           />
           <ProjectSampleCard
             image={uni7}
@@ -100,7 +114,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Python \xa0 Regex"}
-            alternate={true}
+            alternate={false}
           />
           <ProjectSampleCard
             image={uni6}
@@ -110,7 +124,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Shell \xa0 Regex"}
-            alternate={false}
+            alternate={true}
           />
           <ProjectSampleCard
             image={uni2}
@@ -120,7 +134,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Java"}
-            alternate={true}
+            alternate={false}
           />
 
           <ProjectSampleCard
@@ -131,7 +145,7 @@ function Projects() {
             }
             application={"Backend"}
             language={"Java"}
-            alternate={false}
+            alternate={true}
           />
         </>
       )}
