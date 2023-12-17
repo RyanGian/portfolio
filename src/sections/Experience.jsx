@@ -8,8 +8,11 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+
 import Typography from "@mui/material/Typography";
+
+import daiseeLogo from "../assets/experience-logos/daisee-logo.png";
+import unswLogo from "../assets/experience-logos/unsw-logo.png";
 
 function Experience() {
   return (
@@ -21,15 +24,21 @@ function Experience() {
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
-              color="text.secondary"
               style={{ fontSize: "1.5rem" }}
             >
               Nov 2023 -
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary">
-                <LaptopMacIcon />
+              <TimelineDot
+                sx={{ width: "60px", height: "60px", padding: 0 }}
+                color="grey"
+              >
+                <img
+                  src={daiseeLogo}
+                  alt="daisee-logo"
+                  style={{ width: "100%", height: "100%", borderRadius: "50%" }}
+                ></img>
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
@@ -59,15 +68,21 @@ function Experience() {
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
-              color="text.secondary"
               style={{ fontSize: "1.5rem" }}
             >
               2021 -
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary">
-                <LaptopMacIcon />
+              <TimelineDot
+                sx={{ width: "60px", height: "60px", padding: 0 }}
+                color="grey"
+              >
+                <img
+                  src={unswLogo}
+                  alt="unsw-logo"
+                  style={{ width: "100%", height: "100%", borderRadius: "50%" }}
+                ></img>
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
