@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.be5284a0.css",
-    "main.js": "/portfolio/static/js/main.6584e79f.js",
+    "main.js": "/portfolio/static/js/main.081d9928.js",
     "static/js/787.7de8f4a0.chunk.js": "/portfolio/static/js/787.7de8f4a0.chunk.js",
     "static/media/airbrb.png": "/portfolio/static/media/airbrb.eb1afa8f4bc47fdd6bd4.png",
     "static/media/dungeon-mania.PNG": "/portfolio/static/media/dungeon-mania.4878ecefb1f57e104fb0.PNG",
     "static/media/back-in-blackout.png": "/portfolio/static/media/back-in-blackout.b3e4df0bd7abce8cc017.png",
     "static/media/personal-visualiser.png": "/portfolio/static/media/personal-visualiser.4e12f73552f61bc78d26.png",
     "static/media/seams.png": "/portfolio/static/media/seams.af350d75679dfcccf4cb.png",
+    "static/media/tutormanager.PNG": "/portfolio/static/media/tutormanager.54fadf1ae62a3ee6194e.PNG",
     "static/media/personal-site.PNG": "/portfolio/static/media/personal-site.b40c1fe1259fc136975b.PNG",
     "static/media/git.png": "/portfolio/static/media/git.60f472d85bd881b905f8.png",
     "static/media/transpiler.PNG": "/portfolio/static/media/transpiler.67d5f45d51b0f7fa0391.PNG",
@@ -23,11 +24,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/html-icon.svg": "/portfolio/static/media/html-icon.3b77917d0e12e8e81ee053d3bf4b2a86.svg",
     "main.be5284a0.css.map": "/portfolio/static/css/main.be5284a0.css.map",
-    "main.6584e79f.js.map": "/portfolio/static/js/main.6584e79f.js.map",
+    "main.081d9928.js.map": "/portfolio/static/js/main.081d9928.js.map",
     "787.7de8f4a0.chunk.js.map": "/portfolio/static/js/787.7de8f4a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be5284a0.css",
-    "static/js/main.6584e79f.js"
+    "static/js/main.081d9928.js"
   ]
 }
