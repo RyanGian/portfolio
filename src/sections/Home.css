@@ -164,4 +164,8 @@
     font-size: 0.7em;
     height: 30px;
   }
+
+  .below-the-fold-scroll-container {
+    margin-bottom: 50px;
+  }
 }

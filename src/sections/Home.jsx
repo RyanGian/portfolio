@@ -28,7 +28,7 @@ function Home() {
       </div>
 
       <div
-        className="below-the-fold-scroll-container "
+        className="below-the-fold-scroll-container"
         onClick={() => {
           handleScroll("Projects");
         }}
