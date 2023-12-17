@@ -43,7 +43,7 @@
   font-size: 7em;
   clip-path: inset(2px);
   border-radius: 13px;
-  padding: 10px 20px 10px 20px;
+  padding: 0px 60px 0px 60px;
 }
 
 @keyframes gradient {
@@ -137,7 +137,7 @@
     max-width: 500px;
   }
   .name-container {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   .profile-container {
@@ -152,7 +152,7 @@
     max-width: 300px;
   }
   .name-container {
-    font-size: 3em;
+    font-size: 2.3em;
   }
 
   .profile-container {
