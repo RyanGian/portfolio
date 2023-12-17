@@ -5,7 +5,6 @@ import SectionHeader from "../components/SectionHeader";
 function Experience() {
   return (
     <div className="experience-container" name="Experience">
-      {" "}
       <SectionHeader text={"EXPERIENCE"} />
     </div>
   );
