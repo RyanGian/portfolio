@@ -21,9 +21,9 @@ function Home() {
           <div className="name-container">RYAN GIAN</div>
         </div>
 
-        <div className="profile-container">
+        {/* <div className="profile-container">
           Hi! I am currently a Computer Science student at UNSW.
-        </div>
+        </div> */}
       </div>
 
       <div
