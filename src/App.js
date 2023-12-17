@@ -9,9 +9,11 @@ import Skills from "./sections/Skills.jsx";
 import Contact from "./sections/Contact.jsx";
 import LeftSideBar from "./components/LeftSideBar";
 
+import { MantineProvider } from "@mantine/core";
+
 function App() {
   return (
-    <>
+    <MantineProvider>
       <div>
         <Header className="header" />
         <LeftSideBar />
@@ -24,7 +26,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </>
+    </MantineProvider>
   );
 }
 
