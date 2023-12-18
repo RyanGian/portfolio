@@ -14,6 +14,18 @@ import Typography from "@mui/material/Typography";
 import daiseeLogo from "../assets/experience-logos/daisee-logo.png";
 import unswLogo from "../assets/experience-logos/unsw-logo.png";
 
+import { createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme();
+theme.typography.h4 = {
+  fontWeight: 400,
+  "@media (max-width:600px)": {
+    fontWeight: 300,
+    fontSize: "0.8rem",
+  },
+};
+
 function Experience() {
   return (
     <div className="experience-container" name="Experience">
@@ -58,10 +70,13 @@ function Experience() {
               <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
                 {"\n"}
               </Typography>
-              <Typography>
-                Tech Stack: Typescript, Next.js, Python, Haskell, AWS, Docker,
-                Postgresql
-              </Typography>
+
+              <ThemeProvider theme={theme}>
+                <Typography variant="h4">
+                  Tech Stack: Typescript, Next.js, Python, Haskell, AWS, Docker,
+                  Postgresql
+                </Typography>
+              </ThemeProvider>
             </TimelineContent>
           </TimelineItem>
 
@@ -91,13 +106,15 @@ function Experience() {
               <Typography variant="h4" component="span">
                 UNSW
               </Typography>
-
-              <Typography>
-                Relevant Courses: Programming fundamentals, Software Engineering
-                Fundamentals, Software Construction, Object-Orientated Design &
-                Programming, Data Structures and Algorithms, Web Front-End
-                Programming, Advanced C++ Programming
-              </Typography>
+              <ThemeProvider theme={theme}>
+                <Typography variant="h4">
+                  Relevant Courses: Programming fundamentals, Software
+                  Engineering Fundamentals, Software Construction,
+                  Object-Orientated Design & Programming, Data Structures and
+                  Algorithms, Web Front-End Programming, Advanced C++
+                  Programming
+                </Typography>
+              </ThemeProvider>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
