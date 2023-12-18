@@ -18,11 +18,35 @@ import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme();
-theme.typography.h4 = {
+theme.typography.h5 = {
+  fontSize: "18px",
   fontWeight: 400,
   "@media (max-width:600px)": {
     fontWeight: 300,
     fontSize: "0.8rem",
+  },
+};
+
+theme.typography.h4 = {
+  fontSize: "35px",
+  // typography: {
+  //   fontFamily: "Poligon",
+  // },
+  "@media (max-width:600px)": {
+    // fontWeight: 300,
+    fontSize: "23px",
+  },
+};
+
+theme.typography.h6 = {
+  fontSize: "28px",
+  fontWeight: 300,
+  // typography: {
+  //   fontFamily: "Poligon",
+  // },
+  "@media (max-width:600px)": {
+    fontWeight: 300,
+    fontSize: "20px",
   },
 };
 
@@ -56,10 +80,16 @@ function Experience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "20px", px: 2 }}>
-              <Typography variant="h4" component="span">
-                Software Engineer Intern
-              </Typography>
-              <Typography variant="h5">daisee</Typography>
+              <ThemeProvider theme={theme}>
+                <Typography variant="h4" component="span">
+                  Software Engineer Intern
+                </Typography>
+              </ThemeProvider>
+
+              <ThemeProvider theme={theme}>
+                <Typography variant="h6">daisee</Typography>
+              </ThemeProvider>
+
               <Typography>
                 {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -72,7 +102,7 @@ function Experience() {
               </Typography>
 
               <ThemeProvider theme={theme}>
-                <Typography variant="h4">
+                <Typography variant="h5">
                   Tech Stack: Typescript, Next.js, Python, Haskell, AWS, Docker,
                   Postgresql
                 </Typography>
@@ -103,11 +133,14 @@ function Experience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
-              <Typography variant="h4" component="span">
-                UNSW
-              </Typography>
               <ThemeProvider theme={theme}>
-                <Typography variant="h4">
+                <Typography variant="h4" component="span">
+                  UNSW
+                </Typography>
+              </ThemeProvider>
+
+              <ThemeProvider theme={theme}>
+                <Typography variant="h5">
                   Relevant Courses: Programming fundamentals, Software
                   Engineering Fundamentals, Software Construction,
                   Object-Orientated Design & Programming, Data Structures and
