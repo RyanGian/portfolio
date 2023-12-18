@@ -61,10 +61,11 @@ function Experience() {
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
-              style={{ fontSize: "1.5rem" }}
+              style={{ fontSize: "1.4rem" }}
             >
               Nov 2023 -
             </TimelineOppositeContent>
+
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot
@@ -114,7 +115,7 @@ function Experience() {
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
-              style={{ fontSize: "1.5rem" }}
+              style={{ fontSize: "1.4rem" }}
             >
               2021 -
             </TimelineOppositeContent>
