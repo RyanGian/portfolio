@@ -300,7 +300,7 @@ const ResizeDescription = styled.div`
   }
 
   @media (max-width: 550px) {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   @media (max-width: 430px) {
