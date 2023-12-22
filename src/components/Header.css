@@ -86,7 +86,7 @@
 .app-bar-tabs {
   margin-top: 100vh;
   height: calc(100vh - 80px);
-  z-index: 2;
+  z-index: 10;
   background: #101010;
   /* background-color: aqua; */
   width: 100vw;
@@ -94,6 +94,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  /* position: fixed; */
 }
 
 .app-bar-tabs > div {

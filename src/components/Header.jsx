@@ -85,10 +85,49 @@ function Header() {
 
         <Slide direction="down" in={checked} mountOnEnter unmountOnExit>
           <div className="app-bar-tabs">
-            <div>EXPERIENCE</div>
-            <div>PROJECTS</div>
-            <div>SKILLS</div>
-            <div>CONTACT</div>
+            <div
+              onClick={() => {
+                setTimeout(() => {
+                  handleChange();
+                }, 500);
+                handleScroll("Experience");
+              }}
+            >
+              EXPERIENCE
+            </div>
+            <div
+              onClick={() => {
+                setTimeout(() => {
+                  handleChange();
+                }, 500);
+
+                handleScroll("Projects");
+              }}
+            >
+              PROJECTS
+            </div>
+            <div
+              onClick={() => {
+                setTimeout(() => {
+                  handleChange();
+                }, 500);
+
+                handleScroll("Skills");
+              }}
+            >
+              SKILLS
+            </div>
+            <div
+              onClick={() => {
+                setTimeout(() => {
+                  handleChange();
+                }, 500);
+
+                handleScroll("Contact");
+              }}
+            >
+              CONTACT
+            </div>
           </div>
         </Slide>
       </div>
