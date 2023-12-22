@@ -88,7 +88,9 @@ function Experience() {
               </ThemeProvider>
 
               <ThemeProvider theme={theme}>
-                <Typography variant="h6">daisee</Typography>
+                <Typography className="company-title" variant="h6">
+                  daisee
+                </Typography>
               </ThemeProvider>
 
               <Typography>
@@ -134,8 +136,14 @@ function Experience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
-              <ThemeProvider theme={theme}>
+              {/* <ThemeProvider theme={theme}>
                 <Typography variant="h4" component="span">
+                  B.S of Computer Science
+                </Typography>
+              </ThemeProvider> */}
+
+              <ThemeProvider theme={theme}>
+                <Typography className="company-title" variant="h6">
                   UNSW
                 </Typography>
               </ThemeProvider>

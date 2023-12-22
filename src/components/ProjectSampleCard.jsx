@@ -338,6 +338,14 @@ const ResizeLinks = styled.div`
   }
 `;
 
+const TitleWord = styled.h1`
+  color: rgb(255, 215, 137);
+`;
+
+const TypeWord = styled.h4`
+  color: rgb(255, 215, 137);
+`;
+
 const ProjectSampleCard = (props) => {
   const [windowWidth, setWindowWidth] = useState(0);
   const [windowHeight, setWindowHeight] = useState(0);
