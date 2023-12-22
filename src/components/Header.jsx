@@ -93,7 +93,7 @@ function Header() {
                 handleScroll("Experience");
               }}
             >
-              EXPERIENCEE
+              EXPERIENCE
             </div>
             <div
               onClick={() => {
