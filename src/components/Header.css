@@ -84,8 +84,8 @@
 }
 
 .app-bar-tabs {
-  margin-top: 100svh;
-  height: calc(100svh - 80px);
+  margin-top: 100dvh;
+  height: calc(100dvh - 80px);
   z-index: 10;
   background: #101010;
   /* background-color: aqua; */
