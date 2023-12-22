@@ -56,8 +56,8 @@ function Experience() {
       <SectionHeader text={"EXPERIENCE"} />
 
       <div className="timeline-container">
-        <Timeline position="alternate">
-          <TimelineItem>
+        <Timeline>
+          <TimelineItem position="left">
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
@@ -111,7 +111,7 @@ function Experience() {
             </TimelineContent>
           </TimelineItem>
 
-          <TimelineItem>
+          <TimelineItem position="right">
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
               variant="body2"
