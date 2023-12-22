@@ -1,12 +1,13 @@
 .experience-container {
   width: 100%;
   position: relative;
-  background-color: brown;
+  /* background-color: brown; */
   background-color: #101010;
   min-height: calc(100vh);
   color: white;
   text-align: center;
   /* user-select: none; */
+  /* color: rgb(255, 215, 137); */
 }
 
 .timeline-container {
