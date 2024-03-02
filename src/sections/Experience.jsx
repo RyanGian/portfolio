@@ -63,7 +63,7 @@ function Experience() {
               variant="body2"
               style={{ fontSize: "1.4rem" }}
             >
-              Nov 2023 -
+              Nov 2023 - Current
             </TimelineOppositeContent>
 
             <TimelineSeparator>
@@ -103,11 +103,10 @@ function Experience() {
               <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
                 {"\n"}
               </Typography>
-
               <ThemeProvider theme={theme}>
                 <Typography variant="h5">
-                  Tech Stack: Typescript, Next.js, Python, Haskell, AWS, Docker,
-                  Postgresql
+                  <b>Tech Stack:</b> React.js, Typescript, Python, Haskell,
+                  Postgresql, AWS, Docker
                 </Typography>
               </ThemeProvider>
             </TimelineContent>
@@ -119,7 +118,7 @@ function Experience() {
               variant="body2"
               style={{ fontSize: "1.4rem" }}
             >
-              2021 -
+              2021 - Current
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -136,11 +135,11 @@ function Experience() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "50px", px: 2 }}>
-              {/* <ThemeProvider theme={theme}>
+              <ThemeProvider theme={theme}>
                 <Typography variant="h4" component="span">
-                  B.S of Computer Science
+                  Bachelor of Computer Science
                 </Typography>
-              </ThemeProvider> */}
+              </ThemeProvider>
 
               <ThemeProvider theme={theme}>
                 <Typography className="company-title" variant="h6">
@@ -148,9 +147,13 @@ function Experience() {
                 </Typography>
               </ThemeProvider>
 
+              <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
+                {"\n"}
+              </Typography>
+
               <ThemeProvider theme={theme}>
                 <Typography variant="h5">
-                  Relevant Courses: Programming fundamentals, Software
+                  <b>Relevant Courses:</b> Programming fundamentals, Software
                   Engineering Fundamentals, Software Construction,
                   Object-Orientated Design & Programming, Data Structures and
                   Algorithms, Web Front-End Programming, Advanced C++

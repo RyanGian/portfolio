@@ -18,7 +18,8 @@ import pythonLogo from "../assets/skillsIcons/python-icon.svg";
 // import rLogo from "../assets/skillsIcons/r-icon.svg";
 import bashLogo from "../assets/skillsIcons/bash-icon.svg";
 import typescriptLogo from "../assets/skillsIcons/typescript-icon.svg";
-
+import rustLogo from "../assets/skillsIcons/rust-icon.svg";
+import postgresqlLogo from "../assets/skillsIcons/postgresql-icon.svg";
 import SectionHeader from "../components/SectionHeader";
 
 const SkillsContainer = styled.div`
@@ -104,10 +105,11 @@ function Skills() {
       <SkillsText>Languages, and Tech I've used</SkillsText>
 
       <SkillsDisplayFlexbox>
-        <SkillBox icon={reactLogo} skillText={"React"} />
         <SkillBox icon={pythonLogo} skillText={"Python"} />
+        <SkillBox icon={reactLogo} skillText={"React"} />
         <SkillBox icon={javascriptLogo} skillText={"Javascript"} />
         <SkillBox icon={typescriptLogo} skillText={"TypeScript"} />
+        <SkillBox icon={postgresqlLogo} skillText={"PostgreSQL"} />
         <SkillBox icon={javaLogo} skillText={"Java"} />
         <SkillBox icon={htmlLogo} skillText={"HTML"} />
         <SkillBox icon={cssLogo} skillText={"CSS"} />
@@ -120,9 +122,10 @@ function Skills() {
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
         <SkillBox icon={arduinoLogo} skillText={"Arduino"} />
         <SkillBox icon={rLogo} skillText={"R"} /> */}
-        <SkillBox icon={bashLogo} skillText={"Shell Script"} />
         {/* <SkillBox icon={} skillText={"Vue"} />
         <SkillBox icon={} skillText={"sass"} /> */}
+        <SkillBox icon={rustLogo} skillText={"Rust"} />
+        <SkillBox icon={bashLogo} skillText={"Shell (Dash)"} />
       </SkillsDisplayFlexbox>
     </SkillsContainer>
   );

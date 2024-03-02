@@ -6,7 +6,7 @@ import { SiMinutemailer } from "react-icons/si";
 
 const ContactText = styled.div`
   margin: auto;
-  margin-top: 80px;
+  margin-top: 120px;
   font-size: 1.5em;
   width: 500px;
 
@@ -40,10 +40,11 @@ function Contact() {
           If you have any opportunities, questions or just want to say hello, my
           inbox is always open!
           <div className="email-container">
-            <span ><SiMinutemailer className="mail-icon"/></span>
+            <span>
+              <SiMinutemailer className="mail-icon" />
+            </span>
             <span>ryan1gian@gmail.com</span>
           </div>
-
         </div>
       </ContactText>
       <div className="email-redirect">

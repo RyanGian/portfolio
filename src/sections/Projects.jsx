@@ -31,13 +31,13 @@ function Projects() {
             image={sample1}
             title={"Personal Portfolio Website"}
             description={
-              "This site! A personal portfolio page I have created to showcase my own projects, own skills, and contact information."
+              "This site! A personal portfolio page I have created to showcase my own projects, own skills, and contact information. Most of the components used were written from scratch!"
             }
             application={"Front End"}
             language={"HTML \xa0 CSS \xa0 Javascript \xa0 React"}
             alternate={false}
-            redirectGithublink={true}
-            gitHubLink={"https://github.com/RyanGian/Ryan-Portfolio"}
+            redirectGithublink={false}
+            // gitHubLink={"https://github.com/RyanGian/Ryan-Portfolio"}
             redirectLink={false}
           />
           <ProjectSampleCard
@@ -100,7 +100,7 @@ function Projects() {
             image={uni4}
             title={"Seams"}
             description={
-              "Collaborated in a group of 5 to create a mock app of Microsoft Teams. Gained experience in the AGILE development lifecycle, testing, and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data. "
+              "Collaborated in a group of 5 to create a mock Microsoft Teams app. Gained experience in the AGILE development lifecycle, testing, and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data."
             }
             application={"Backend"}
             language={"Python \xa0 Flask"}

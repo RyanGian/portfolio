@@ -84,7 +84,7 @@ const DescriptionContainer = styled.div`
 `;
 
 const DescriptionText = styled.div`
-  text-align: ${(props) => (props.right ? "right" : "left")};
+  text-align: justify;
   padding: 16px
   }
 `;
@@ -204,7 +204,14 @@ const ResizeContainer = styled.div`
 
   @media (max-width: 700px) {
     width: 70vw;
-    height: 70vw;
+    height: 55vw;
+    overflow: hidden;
+  }
+
+  // Included 600px only due to sizing issues. 600px media query only here
+  @media (max-width: 600px) {
+    width: 70vw;
+    height: 65vw;
     overflow: hidden;
   }
 
@@ -293,6 +300,9 @@ const ResizeDescription = styled.div`
   font-weight: 300;
   width: 95%;
   margin-top: 10px;
+
+  // Here for smaller width size
+  // text-align: justify;
 
   .float-left {
     float: left;

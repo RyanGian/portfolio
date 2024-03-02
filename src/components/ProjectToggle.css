@@ -9,7 +9,7 @@
 }
 
 .active {
-  background-color: #a9a9a9;
+  border: 1px solid rgb(255, 215, 137);
 }
 
 .tab-box {
@@ -27,7 +27,6 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-
 
 @media (max-width: 750px) {
   .project-toggle-container {
@@ -50,6 +49,5 @@
   .tab-box {
     width: 90px;
     font-size: 0.9em;
-
   }
 }
