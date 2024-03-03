@@ -58,7 +58,10 @@ const ExperienceLeft = (props) => {
         style={{ fontSize: "1.4rem" }}
       >
         <div className="animation-parent">
-          <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-1s">
+          <ScrollAnimation
+            animateIn="animate__animated animate__fadeInRight"
+            delay={1000}
+          >
             {/* <div className="animate__animated animate__fadeInLeft animate__delay-1s"> */}
             {props.date}
             {/* </div> */}
@@ -80,12 +83,12 @@ const ExperienceLeft = (props) => {
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent sx={{ py: "20px", px: 2 }}>
+      <TimelineContent sx={{ py: "80px", px: 2 }}>
         <ThemeProvider theme={theme}>
           <Typography variant="h4" component="span">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight">
               <div className="animation-parent">
-                {/* <div className="animate__animated animate__fadeInRight animate__delay-0.5s"> */}
+                {/* <div className="animate__animated animate__fadeInRight"> */}
                 {props.title}
                 {/* </div> */}
               </div>
@@ -95,9 +98,9 @@ const ExperienceLeft = (props) => {
 
         <ThemeProvider theme={theme}>
           <Typography className="company-title" variant="h6">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight">
               <div className="animation-parent">
-                {/* <div className="animate__animated animate__fadeInRight animate__delay-0.5s"> */}
+                {/* <div className="animate__animated animate__fadeInRight"> */}
                 {props.company}
                 {/* </div> */}
               </div>
@@ -112,14 +115,14 @@ const ExperienceLeft = (props) => {
             curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
             placerat orci nulla. */}
         </Typography>
-        <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
+        {/* <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
           {"\n"}
-        </Typography>
+        </Typography> */}
         <ThemeProvider theme={theme}>
           <Typography variant="h5">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight">
               <div className="animation-parent">
-                <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
+                <div className="animate__animated animate__fadeInRight">
                   <b>{props.bold}</b> {props.description}
                 </div>
               </div>

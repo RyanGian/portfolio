@@ -65,11 +65,11 @@ function Projects() {
             image={uni8}
             title={"Tutor Manager"}
             description={
-              "Worked in a group of 5 to create a fully functional tutor manager website. Students would be able to find tutors and make bookings. Database was hosted on AWS. Utilised Flask as a web application framework to connect the backend ports to the frontend. Material-UI utilised for most frontend components."
+              "Worked in a group of 5 to create a fully functional tutor manager website. Students would be able to find tutors and make bookings. Tutors would be able to manage students on a simplified dashboard. Database was hosted on AWS. Utilised Flask as a web application framework to connect the backend ports to the frontend. Jira board utilised during 3 sprints."
             }
             application={"Fullstack"}
             language={
-              "React \xa0 Python \xa0 PostgreSQL (Psycopg2) \xa0 Flask \xa0 AWS \xa0 CSS \xa0 HTML \xa0 Material-UI"
+              "React \xa0 Python \xa0 PostgreSQL (Psycopg2) \xa0 Flask \xa0 CSS \xa0 HTML \xa0 Material-UI"
             }
             alternate={false}
           />
@@ -100,7 +100,7 @@ function Projects() {
             image={uni4}
             title={"Seams"}
             description={
-              "Collaborated in a group of 5 to create a mock Microsoft Teams app. Gained experience in the AGILE development lifecycle, testing, and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server to the entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data."
+              "Collaborated in a group of 5 to create a mock Microsoft Teams app. Gained experience in the AGILE development lifecycle, testing, and maintaining backend server in Python. Grew an appreciation for product design and understood customer requirement via user stories. Implemented and tested HTTP Flask server to entire interface. Learnt to keep data persistence throughout app and used JWTs (JSON Web Tokens) to encrypt user data."
             }
             application={"Backend"}
             language={"Python \xa0 Flask"}
@@ -120,7 +120,7 @@ function Projects() {
             image={uni6}
             title={"Pigs"}
             description={
-              "Implemented Pigs, which was a simplified version control system of Git. Pigs stood for POSIX Implementation of Git in Shell. Had to replicate many git commands where these commands had to be implemented in POSIX-compatible Shell. Strengthened skills in regex, and file manipulation. This task reproduced the function of the staging area between the workspace and the repository aka the Git Index."
+              'Implemented Pigs, which was a simplified version control system of Git. Pigs stood for "POSIX Implementation of Git" in Shell. Had to replicate many git commands where these commands had to be implemented in POSIX-compatible Shell. Strengthened skills in regex, and file manipulation. This task reproduced the function of the staging area between the workspace and the repository (aka the Git Index).'
             }
             application={"Backend"}
             language={"Shell \xa0 Regex"}
@@ -130,7 +130,7 @@ function Projects() {
             image={uni2}
             title={"Dungeon Mania"}
             description={
-              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (continued persistence through different saves of the game)."
+              "Worked in a team of 4 to create the backend for a dungeon game. Applied various software design principles and design patterns as software solutions. Adapted to changes in specification requirement. Utilised Agile principles to our project management and software development. Built a persistent web application in the program (continued persistence through different saves of the game)."
             }
             application={"Backend"}
             language={"Java"}

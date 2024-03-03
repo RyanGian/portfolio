@@ -43,7 +43,7 @@ function ProjectToggle(props) {
           setUni();
         }}
       >
-        UNI
+        UNIVERSITY
       </div>
     </div>
   );

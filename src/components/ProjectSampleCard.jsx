@@ -41,13 +41,16 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.div`
-  //border: 1px solid blue;
+  // border: 1px solid blue;
   margin-left: ${(props) => (props.right ? "140px" : "0px")};
   text-align: ${(props) => (props.right ? "right" : "left")};
   border-radius: 5px;
   width: 75%;
   min-height: 100px;
   padding-bottom: 5px;
+  // color: rgb(255, 215, 137);
+
+  color: rgb(245, 198, 104);
 
   .github-logo {
     width: 25px;
@@ -260,6 +263,7 @@ const ResizeTitle = styled.div`
   float: left;
   width: 90%;
   margin: auto;
+  color: rgb(245, 198, 104);
 
   @media (max-width: 1000px) {
   }
@@ -280,6 +284,8 @@ const ResizeApplication = styled.div`
   width: 100%;
   float: right;
   //border: 1px solid white;
+
+  color: rgb(245, 198, 104);
 
   .float-left {
     float: left;

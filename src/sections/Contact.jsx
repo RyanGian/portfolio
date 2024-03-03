@@ -32,6 +32,8 @@ const ContactText = styled.div`
   }
 `;
 
+const style = { color: "rgb(255, 215, 137)" };
+
 function Contact() {
   return (
     <div className="contact-container" name="Contact">
@@ -48,9 +50,9 @@ function Contact() {
             my inbox is always open!
             <div className="email-container">
               <span>
-                <SiMinutemailer className="mail-icon" />
+                <SiMinutemailer className="mail-icon" style={style} />
               </span>
-              <span>ryan1gian@gmail.com</span>
+              <div style={style}>ryan1gian@gmail.com</div>
             </div>
           </div>
         </ContactText>
@@ -60,7 +62,7 @@ function Contact() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Email Me!
+            <span className="email-button-text">Email Me!</span>
           </a>
         </div>
       </ScrollAnimation>

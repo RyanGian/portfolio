@@ -1,10 +1,12 @@
 import "./Header.css";
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Switch from "@mui/material/Switch";
-import Paper from "@mui/material/Paper";
-import Collapse from "@mui/material/Collapse";
-import FormControlLabel from "@mui/material/FormControlLabel";
+
+// import Box from "@mui/material/Box";
+// import Switch from "@mui/material/Switch";
+// import Paper from "@mui/material/Paper";
+// import Collapse from "@mui/material/Collapse";
+// import FormControlLabel from "@mui/material/FormControlLabel";
+
 import Slide from "@mui/material/Slide";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
@@ -76,7 +78,7 @@ function Header() {
           label={<MenuIcon />}
         /> */}
         <div className="menu-button-container">
-          {checked == false ? (
+          {checked === false ? (
             <MenuIcon onClick={() => handleChange()} />
           ) : (
             <MenuOpenIcon onClick={() => handleChange()} />

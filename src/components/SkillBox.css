@@ -77,10 +77,14 @@ img {
 
 .skill-box-container:hover {
   animation: scaleAnimation 1s forwards;
+  border: solid 1px rgb(255, 215, 137);
+  .skill-text {
+    color: rgb(255, 215, 137);
+  }
 }
 
 @keyframes scaleAnimation {
   100% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }

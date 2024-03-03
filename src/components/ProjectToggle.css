@@ -6,32 +6,90 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  /* color: rgb(255, 215, 137); */
 }
 
 .active {
-  border: 1px solid rgb(255, 215, 137);
+}
+
+.active:hover {
+}
+
+/* .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #00f,
+    #0f0
+  );
+  border-image-slice: 1;
+  transition: width 0.3s ease;
+}
+
+.active:hover::before {
+  width: 100%;
+} */
+
+.active:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */
+
+  position: relative;
+
+  border-image-slice: 1;
+  transition: width 0.3s ease, border-color 275ms ease;
+}
+
+.active:hover::after {
+  /* border-image: linear-gradient(to right, rgb(245, 190, 81), white 99%); */
+  border-color: rgb(245, 190, 81);
+  width: 65%;
 }
 
 .tab-box {
   width: 150px;
   padding: 10px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   font-size: 1.5em;
+
+  background: linear-gradient(
+    to right,
+    rgb(245, 190, 81),
+    rgb(255, 215, 137) 50%,
+    white 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
 }
 
 .tab-box:hover {
+  background-position: 0 100%;
   cursor: pointer;
 }
 
-.tab-box:not(.active):hover {
+/* .tab-box:not(.active):hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
+} */
 
 @media (max-width: 750px) {
   .project-toggle-container {
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   .tab-box {
@@ -43,7 +101,7 @@
 @media (max-width: 600px) {
   .project-toggle-container {
     padding-top: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 
   .tab-box {

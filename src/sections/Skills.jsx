@@ -34,6 +34,7 @@ const SkillsContainer = styled.div`
   // user-select: none;
   /* margin-bottom: 100px; */
   padding-bottom: 80px;
+
   }
 `;
 
@@ -43,6 +44,8 @@ const SkillsText = styled.div`
   margin-top: 100px;
   font-size: 1.5em;
   margin-bottom: 60px;
+  // color: rgb(255, 215, 137);
+
   @media (max-width: 850px) {
     margin-top: 80px;
     }
