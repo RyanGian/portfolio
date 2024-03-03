@@ -96,6 +96,14 @@ const ExperienceRight = (props) => {
           </Typography>
         </ThemeProvider>
 
+        <Typography>
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Morbi tempus iaculis urna id volutpat lacus laoreet non
+            curabitur. Ipsum suspendisse ultrices gravida dictum fusce ut
+            placerat orci nulla. */}
+        </Typography>
+
         <Typography variant="h6" sx={{ whiteSpace: "pre-line" }}>
           {"\n"}
         </Typography>
