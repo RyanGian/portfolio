@@ -55,8 +55,8 @@ const ExperienceLeft = (props) => {
         variant="body2"
         style={{ fontSize: "1.4rem" }}
       >
-        <div class="animation-parent">
-          <div class="animate__animated animate__fadeInLeft animate__delay-1s">
+        <div className="animation-parent">
+          <div className="animate__animated animate__fadeInLeft animate__delay-1s">
             {props.date}
           </div>
         </div>
@@ -79,8 +79,8 @@ const ExperienceLeft = (props) => {
       <TimelineContent sx={{ py: "20px", px: 2 }}>
         <ThemeProvider theme={theme}>
           <Typography variant="h4" component="span">
-            <div class="animation-parent">
-              <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <div className="animation-parent">
+              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
                 {props.title}
               </div>
             </div>
@@ -89,8 +89,8 @@ const ExperienceLeft = (props) => {
 
         <ThemeProvider theme={theme}>
           <Typography className="company-title" variant="h6">
-            <div class="animation-parent">
-              <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <div className="animation-parent">
+              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
                 {props.company}
               </div>
             </div>
@@ -109,8 +109,8 @@ const ExperienceLeft = (props) => {
         </Typography>
         <ThemeProvider theme={theme}>
           <Typography variant="h5">
-            <div class="animation-parent">
-              <div class="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <div className="animation-parent">
+              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
                 <b>{props.bold}</b> {props.description}
               </div>
             </div>
