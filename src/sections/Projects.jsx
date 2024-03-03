@@ -69,7 +69,7 @@ function Projects() {
             }
             application={"Fullstack"}
             language={
-              "React \xa0 Python \xa0 PostgreSQL (Psycopg2) \xa0 Flask \xa0 CSS \xa0 HTML \xa0 Material-UI"
+              "React \xa0 Python \xa0 PostgreSQL \xa0 Flask \xa0 CSS \xa0 HTML \xa0 Material-UI"
             }
             alternate={false}
           />
