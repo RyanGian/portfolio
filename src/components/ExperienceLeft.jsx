@@ -13,6 +13,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 
 import PropTypes from "prop-types";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 
 const theme = createTheme();
 theme.typography.h5 = {
@@ -56,9 +58,11 @@ const ExperienceLeft = (props) => {
         style={{ fontSize: "1.4rem" }}
       >
         <div className="animation-parent">
-          <div className="animate__animated animate__fadeInLeft animate__delay-1s">
+          <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-1s">
+            {/* <div className="animate__animated animate__fadeInLeft animate__delay-1s"> */}
             {props.date}
-          </div>
+            {/* </div> */}
+          </ScrollAnimation>
         </div>
       </TimelineOppositeContent>
 
@@ -79,21 +83,25 @@ const ExperienceLeft = (props) => {
       <TimelineContent sx={{ py: "20px", px: 2 }}>
         <ThemeProvider theme={theme}>
           <Typography variant="h4" component="span">
-            <div className="animation-parent">
-              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+              <div className="animation-parent">
+                {/* <div className="animate__animated animate__fadeInRight animate__delay-0.5s"> */}
                 {props.title}
+                {/* </div> */}
               </div>
-            </div>
+            </ScrollAnimation>
           </Typography>
         </ThemeProvider>
 
         <ThemeProvider theme={theme}>
           <Typography className="company-title" variant="h6">
-            <div className="animation-parent">
-              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+              <div className="animation-parent">
+                {/* <div className="animate__animated animate__fadeInRight animate__delay-0.5s"> */}
                 {props.company}
+                {/* </div> */}
               </div>
-            </div>
+            </ScrollAnimation>
           </Typography>
         </ThemeProvider>
 
@@ -109,11 +117,13 @@ const ExperienceLeft = (props) => {
         </Typography>
         <ThemeProvider theme={theme}>
           <Typography variant="h5">
-            <div className="animation-parent">
-              <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
-                <b>{props.bold}</b> {props.description}
+            <ScrollAnimation animateIn="animate__animated animate__fadeInRight animate__delay-0.5s">
+              <div className="animation-parent">
+                <div className="animate__animated animate__fadeInRight animate__delay-0.5s">
+                  <b>{props.bold}</b> {props.description}
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </Typography>
         </ThemeProvider>
       </TimelineContent>

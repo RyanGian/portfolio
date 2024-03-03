@@ -2,15 +2,18 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import React, { useEffect, useState } from "react";
 import { RiGithubFill, RiExternalLinkLine } from "react-icons/ri";
+import "./ProjectSampleCard.css";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 
 const Container = styled.div`
-  //  border: 1px solid white;
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 180px;
-
+  padding-bottom: 30px;
+  height: 400px;
   // &:hover {
   //   transform: scale(1.1);
   // }
@@ -21,6 +24,7 @@ const Container = styled.div`
   }
 
   }
+  // border: white solid 1px;
 `;
 
 // #a9a9a9
@@ -371,104 +375,108 @@ const ProjectSampleCard = (props) => {
   }, []);
 
   return (
-    <Container>
-      {windowWidth > 1000 ? (
-        <>
-          <ImageContainer
-            width={windowWidth}
-            height={windowHeight}
-            right={props.alternate}
-            left={props.alternate}
-          >
-            <SampleImage
-              className="project-sample-image"
-              src={props.image}
-              alt=""
-            />
-          </ImageContainer>
-          <TextContainer right={props.alternate} left={props.alternate}>
-            <Title right={props.alternate}>
-              <h1>{props.title}</h1>
-              <h4>{props.application}</h4>
-              {props.redirectGithublink && (
-                <a
-                  href={props.gitHubLink}
-                  className="open-button"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <RiGithubFill className="github-logo" />
-                </a>
-              )}
+    <div className="animation-parent">
+      <ScrollAnimation animateOnce={true} animateIn="animate__bounceIn">
+        <Container>
+          {windowWidth > 1000 ? (
+            <>
+              <ImageContainer
+                width={windowWidth}
+                height={windowHeight}
+                right={props.alternate}
+                left={props.alternate}
+              >
+                <SampleImage
+                  className="project-sample-image"
+                  src={props.image}
+                  alt=""
+                />
+              </ImageContainer>
+              <TextContainer right={props.alternate} left={props.alternate}>
+                <Title right={props.alternate}>
+                  <h1>{props.title}</h1>
+                  <h4>{props.application}</h4>
+                  {props.redirectGithublink && (
+                    <a
+                      href={props.gitHubLink}
+                      className="open-button"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <RiGithubFill className="github-logo" />
+                    </a>
+                  )}
 
-              {props.redirectLink && (
-                <a
-                  href={props.siteLink}
-                  className="open-button"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <RiExternalLinkLine className="link-logo" />
-                </a>
-              )}
-            </Title>
-            <DescriptionContainer right={props.alternate}>
-              <DescriptionText right={props.alternate}>
-                {props.description}
-              </DescriptionText>
-            </DescriptionContainer>
-            <Languages right={props.alternate}>{props.language}</Languages>
-          </TextContainer>
-        </>
-      ) : (
-        <ResizeContainer>
-          <ResizeTextContainer>
-            <ResizeTitle>
-              <b>{props.title}</b>
-            </ResizeTitle>
-            <ResizeApplication>
-              <b className="float-left">{props.application}</b>
-            </ResizeApplication>
-            <ResizeLinks>
-              {props.redirectGithublink && (
-                <a
-                  href={props.gitHubLink}
-                  className="open-button float-left"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <RiGithubFill className="github-logo" />
-                </a>
-              )}
+                  {props.redirectLink && (
+                    <a
+                      href={props.siteLink}
+                      className="open-button"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <RiExternalLinkLine className="link-logo" />
+                    </a>
+                  )}
+                </Title>
+                <DescriptionContainer right={props.alternate}>
+                  <DescriptionText right={props.alternate}>
+                    {props.description}
+                  </DescriptionText>
+                </DescriptionContainer>
+                <Languages right={props.alternate}>{props.language}</Languages>
+              </TextContainer>
+            </>
+          ) : (
+            <ResizeContainer>
+              <ResizeTextContainer>
+                <ResizeTitle>
+                  <b>{props.title}</b>
+                </ResizeTitle>
+                <ResizeApplication>
+                  <b className="float-left">{props.application}</b>
+                </ResizeApplication>
+                <ResizeLinks>
+                  {props.redirectGithublink && (
+                    <a
+                      href={props.gitHubLink}
+                      className="open-button float-left"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <RiGithubFill className="github-logo" />
+                    </a>
+                  )}
 
-              {props.redirectLink && (
-                <a
-                  href={props.siteLink}
-                  className="open-button float-left"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <RiExternalLinkLine className="link-logo" />
-                </a>
-              )}
-            </ResizeLinks>
+                  {props.redirectLink && (
+                    <a
+                      href={props.siteLink}
+                      className="open-button float-left"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <RiExternalLinkLine className="link-logo" />
+                    </a>
+                  )}
+                </ResizeLinks>
 
-            <ResizeDescription>
-              <div className="float-left">{props.description}</div>
-            </ResizeDescription>
-            <Languages>{props.language}</Languages>
-          </ResizeTextContainer>
+                <ResizeDescription>
+                  <div className="float-left">{props.description}</div>
+                </ResizeDescription>
+                <Languages>{props.language}</Languages>
+              </ResizeTextContainer>
 
-          <ImageContainer>
-            <SampleImage
-              className="project-sample-image"
-              src={props.image}
-              alt=""
-            />
-          </ImageContainer>
-        </ResizeContainer>
-      )}
-    </Container>
+              <ImageContainer>
+                <SampleImage
+                  className="project-sample-image"
+                  src={props.image}
+                  alt=""
+                />
+              </ImageContainer>
+            </ResizeContainer>
+          )}
+        </Container>
+      </ScrollAnimation>
+    </div>
   );
 };
 

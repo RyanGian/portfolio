@@ -3,6 +3,8 @@ import "./Contact.css";
 import SectionHeader from "../components/SectionHeader";
 import styled from "styled-components";
 import { SiMinutemailer } from "react-icons/si";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 
 const ContactText = styled.div`
   margin: auto;
@@ -34,28 +36,34 @@ function Contact() {
   return (
     <div className="contact-container" name="Contact">
       <SectionHeader text={"CONTACT"} />
-      <ContactText>
-        <div>What now? Get in touch! </div>
-        <div>
-          If you have any opportunities, questions or just want to say hello, my
-          inbox is always open!
-          <div className="email-container">
-            <span>
-              <SiMinutemailer className="mail-icon" />
-            </span>
-            <span>ryan1gian@gmail.com</span>
+      <ScrollAnimation
+        animateOnce={true}
+        animateIn="animate__animated animate__fadeInLeft"
+        delay={230}
+      >
+        <ContactText>
+          <div>What now? Get in touch! </div>
+          <div>
+            If you have any opportunities, questions or just want to say hello,
+            my inbox is always open!
+            <div className="email-container">
+              <span>
+                <SiMinutemailer className="mail-icon" />
+              </span>
+              <span>ryan1gian@gmail.com</span>
+            </div>
           </div>
+        </ContactText>
+        <div className="email-redirect">
+          <a
+            href="mailto:ryan1gian@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Email Me!
+          </a>
         </div>
-      </ContactText>
-      <div className="email-redirect">
-        <a
-          href="mailto:ryan1gian@gmail.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Email Me!
-        </a>
-      </div>
+      </ScrollAnimation>
     </div>
   );
 }

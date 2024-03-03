@@ -9,8 +9,6 @@ import ExperienceRight from "../components/ExperienceRight";
 
 import unswLogo from "../assets/experience-logos/unsw-logo.png";
 
-import "animate.css";
-
 function Experience() {
   return (
     <div className="experience-container" name="Experience">
