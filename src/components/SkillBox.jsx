@@ -7,9 +7,9 @@ import "animate.css";
 function SkillBox(props) {
   return (
     <ScrollAnimation
-      animateOnce={true}
+      // animateOnce={false}
       animateIn="animate__fadeInLeft"
-      delay={250}
+      delay={230}
     >
       <div className="skill-box-container">
         {/* <img className="skill-image" src={props.skillImage} alt="" /> */}

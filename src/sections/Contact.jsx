@@ -40,7 +40,7 @@ function Contact() {
       <SectionHeader text={"CONTACT"} />
       <ScrollAnimation
         animateOnce={true}
-        animateIn="animate__animated animate__fadeInLeft"
+        animateIn="animate__bounceInUp"
         delay={230}
       >
         <ContactText>
