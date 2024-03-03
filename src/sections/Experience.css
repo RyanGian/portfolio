@@ -19,3 +19,15 @@
 .company-title {
   color: rgb(255, 215, 137);
 }
+
+.animation-parent {
+  overflow: hidden;
+}
+
+/* .animate__animated.animate__fadeInRight {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2.5s;
+} */
