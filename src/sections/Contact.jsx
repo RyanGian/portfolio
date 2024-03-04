@@ -37,10 +37,11 @@ const style = { color: "rgb(255, 215, 137)" };
 function Contact() {
   return (
     <div className="contact-container" name="Contact">
+      {/* <div className="animation-parent"> */}
       <SectionHeader text={"CONTACT"} />
       <ScrollAnimation
-        animateOnce={true}
-        animateIn="animate__bounceInUp"
+        animateOnce={false}
+        animateIn="animate__fadeInUp"
         delay={230}
       >
         <ContactText>
@@ -66,6 +67,7 @@ function Contact() {
           </a>
         </div>
       </ScrollAnimation>
+      {/* </div> */}
     </div>
   );
 }
