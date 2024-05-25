@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e0906b4b.css",
-    "main.js": "/portfolio/static/js/main.a78ae19d.js",
+    "main.js": "/portfolio/static/js/main.3f5c9deb.js",
     "static/js/651.22ef3892.chunk.js": "/portfolio/static/js/651.22ef3892.chunk.js",
     "static/media/airbrb.png": "/portfolio/static/media/airbrb.eb1afa8f4bc47fdd6bd4.png",
     "static/media/dungeon-mania.PNG": "/portfolio/static/media/dungeon-mania.4878ecefb1f57e104fb0.PNG",
     "static/media/back-in-blackout.png": "/portfolio/static/media/back-in-blackout.b3e4df0bd7abce8cc017.png",
+    "static/media/rslogo.PNG": "/portfolio/static/media/rslogo.dc19c0b904991a606902.PNG",
     "static/media/personal-visualiser.png": "/portfolio/static/media/personal-visualiser.4e12f73552f61bc78d26.png",
     "static/media/unsw-logo.png": "/portfolio/static/media/unsw-logo.a1308ab0494aff6101fd.png",
     "static/media/seams.png": "/portfolio/static/media/seams.af350d75679dfcccf4cb.png",
@@ -29,11 +30,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/html-icon.svg": "/portfolio/static/media/html-icon.3b77917d0e12e8e81ee053d3bf4b2a86.svg",
     "main.e0906b4b.css.map": "/portfolio/static/css/main.e0906b4b.css.map",
-    "main.a78ae19d.js.map": "/portfolio/static/js/main.a78ae19d.js.map",
+    "main.3f5c9deb.js.map": "/portfolio/static/js/main.3f5c9deb.js.map",
     "651.22ef3892.chunk.js.map": "/portfolio/static/js/651.22ef3892.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0906b4b.css",
-    "static/js/main.a78ae19d.js"
+    "static/js/main.3f5c9deb.js"
   ]
 }
