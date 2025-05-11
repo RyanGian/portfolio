@@ -18,7 +18,7 @@ import pythonLogo from "../assets/skillsIcons/python-icon.svg";
 // import rLogo from "../assets/skillsIcons/r-icon.svg";
 import bashLogo from "../assets/skillsIcons/bash-icon.svg";
 import typescriptLogo from "../assets/skillsIcons/typescript-icon.svg";
-import rustLogo from "../assets/skillsIcons/rust-icon.svg";
+// import rustLogo from "../assets/skillsIcons/rust-icon.svg";
 import postgresqlLogo from "../assets/skillsIcons/postgresql-icon.svg";
 import SectionHeader from "../components/SectionHeader";
 
@@ -127,7 +127,7 @@ function Skills() {
         <SkillBox icon={rLogo} skillText={"R"} /> */}
         {/* <SkillBox icon={} skillText={"Vue"} />
         <SkillBox icon={} skillText={"sass"} /> */}
-        <SkillBox icon={rustLogo} skillText={"Rust"} />
+        {/* <SkillBox icon={rustLogo} skillText={"Rust"} /> */}
         <SkillBox icon={bashLogo} skillText={"Shell (Dash)"} />
       </SkillsDisplayFlexbox>
     </SkillsContainer>

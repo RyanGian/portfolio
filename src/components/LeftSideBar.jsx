@@ -1,14 +1,14 @@
 import "./LeftSideBar.css";
 // import PropTypes from 'prop-types';
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+// import { MdEmail } from "react-icons/md";
 function LeftSideBar() {
   return (
     <div className="left-side-bar-container">
       <div className="icon-container">
         <div className="line"></div>
 
-        <a
+        {/* <a
           href="mailto:ryan1gian@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -16,7 +16,7 @@ function LeftSideBar() {
           <div className="icon">
             <MdEmail />
           </div>
-        </a>
+        </a> */}
 
         <a
           href={"https://www.linkedin.com/in/ryan-gian/"}

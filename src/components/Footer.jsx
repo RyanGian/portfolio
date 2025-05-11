@@ -18,7 +18,7 @@ const Container = styled.footer`
 const Footer = () => {
   return (
     <Container>
-      <div>Designed & Built by Ryan Gian | 2023</div>
+      <div>Designed & Built by Ryan Gian | 2025</div>
     </Container>
   );
 };

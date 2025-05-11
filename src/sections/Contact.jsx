@@ -57,7 +57,7 @@ function Contact() {
             </div>
           </div>
         </ContactText>
-        <div className="email-redirect">
+        {/* <div className="email-redirect">
           <a
             href="mailto:ryan1gian@gmail.com"
             rel="noopener noreferrer"
@@ -65,7 +65,7 @@ function Contact() {
           >
             <span className="email-button-text">Email Me!</span>
           </a>
-        </div>
+        </div> */}
       </ScrollAnimation>
       {/* </div> */}
     </div>

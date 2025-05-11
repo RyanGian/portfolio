@@ -22,8 +22,16 @@ function Home() {
         </div>
 
         <div className="profile-container">
-          Hi! I am currently a Computer Science student at University of New
-          South Wales (UNSW).
+          <div>Software Engineer based in Sydney, Australia.</div>
+          &nbsp;
+          <div>
+            Graduated with a Bachelor's of Computer Science at the University of
+            New South Wales (UNSW).
+          </div>
+          &nbsp;
+          <div>
+            Interned at a B2B company with a focus on frontend development.
+          </div>
         </div>
       </div>
 

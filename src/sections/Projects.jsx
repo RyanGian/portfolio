@@ -13,6 +13,7 @@ import uni5 from "../assets/projects-uni/slackr.PNG";
 import uni6 from "../assets/projects-uni/git.png";
 import uni7 from "../assets/projects-uni/transpiler.PNG";
 import uni8 from "../assets/projects-uni/tutormanager.PNG";
+import uni9 from "../assets/projects-uni/rslogo.PNG";
 
 import ProjectToggle from "../components/ProjectToggle";
 import SectionHeader from "../components/SectionHeader";
@@ -71,6 +72,16 @@ function Projects() {
             language={
               "React \xa0 Python \xa0 PostgreSQL \xa0 Flask \xa0 CSS \xa0 HTML \xa0 Material-UI"
             }
+            alternate={true}
+          />
+          <ProjectSampleCard
+            image={uni9}
+            title={"RSLogo"}
+            description={
+              "Built and created a Logo programming language interpreter for Rust. Takes Logo commands from a txt file, and interprets the code in rust, writing it into a .svg or .png file. This project put importance on Program design, where design excellence was greatly favoured. Additionally learnt how to correctly structure rust code into library and binary crates."
+            }
+            application={"Backend"}
+            language={"Rust"}
             alternate={false}
           />
           <ProjectSampleCard

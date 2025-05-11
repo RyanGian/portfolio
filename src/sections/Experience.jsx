@@ -20,10 +20,10 @@ function Experience() {
             title={"Software Engineer Intern"}
             company={"daisee"}
             description={
-              "React.js, Typescript, Python, Haskell, Postgresql, AWS, Docker"
+              "Typescript, Python, React.js, Haskell, Postgresql, AWS"
             }
             logo={daiseeLogo}
-            date={"Nov 2023 - Current"}
+            date={"Nov 2023 - Dec 2024"}
             bold={"Tech Stack:"}
           ></ExperienceLeft>
 
@@ -31,10 +31,10 @@ function Experience() {
             title={"Bachelor of Computer Science"}
             company={"UNSW"}
             description={
-              "Programming fundamentals, Software Engineering Fundamentals, Software Construction, Object-Orientated Design & Programming, Data Structures and Algorithms, Web Front-End Programming, Advanced C++ Programming"
+              "Programming fundamentals, Software Engineering Fundamentals, Software Construction, Object-Orientated Design & Programming, Data Structures and Algorithms, Web Front-End Programming, Advanced C++ Programming, Database Systems, Computer Networks and Applications, Software testing and Quality Assurance"
             }
             logo={unswLogo}
-            date={"2021 - Current"}
+            date={"2021 - 2024"}
             bold={"Relevant Courses:"}
           ></ExperienceRight>
         </Timeline>
