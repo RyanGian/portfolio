@@ -28,10 +28,10 @@ function Home() {
             Graduated with a Bachelor's of Computer Science at the University of
             New South Wales (UNSW).
           </div>
-          &nbsp;
-          <div>
+          {/* &nbsp; */}
+          {/* <div>
             Interned at a B2B company with a focus on frontend development.
-          </div>
+          </div> */}
         </div>
       </div>
 
