@@ -72,7 +72,12 @@ const ExperienceLeft = (props) => {
       <TimelineSeparator>
         <TimelineConnector />
         <TimelineDot
-          sx={{ width: "60px", height: "60px", padding: 0 }}
+          sx={{
+            width: "60px",
+            height: "60px",
+            padding: 0,
+            backgroundColor: "transparent",
+          }}
           color="grey"
         >
           <img

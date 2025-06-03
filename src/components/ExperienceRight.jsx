@@ -71,13 +71,22 @@ const ExperienceRight = (props) => {
       <TimelineSeparator>
         <TimelineConnector />
         <TimelineDot
-          sx={{ width: "60px", height: "60px", padding: 0 }}
+          sx={{
+            width: "60px",
+            height: "60px",
+            padding: 0,
+            backgroundColor: "transparent",
+          }}
           color="grey"
         >
           <img
             src={props.logo}
             alt="company-logo"
-            style={{ width: "100%", height: "100%", borderRadius: "50%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              borderRadius: "50%",
+            }}
           ></img>
         </TimelineDot>
         <TimelineConnector />
