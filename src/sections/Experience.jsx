@@ -8,7 +8,7 @@ import ExperienceLeft from "../components/ExperienceLeft";
 import ExperienceRight from "../components/ExperienceRight";
 
 import unswLogo from "../assets/experience-logos/unsw-logo.png";
-import verdicodeLogo from "../assets/experience-logos/veridcode-logo.svg";
+import CastawayForecastingLogo from "../assets/experience-logos/castaway-forecasting-logo.jpg";
 
 function Experience() {
   return (
@@ -18,23 +18,23 @@ function Experience() {
       <div className="timeline-container">
         <Timeline>
           <ExperienceRight
-            title={"Junior Software Developer"}
-            company={"Verdicode"}
-            description={"Typescript, React.js, DynamoDB"}
-            logo={verdicodeLogo}
-            date={"March 2025 - Current"}
-            bold={"Tech Stack:"}
+            title={"Junior Software Engineer"}
+            company={"Castaway Forecasting"}
+            description={""}
+            logo={CastawayForecastingLogo}
+            date={"September 2025 - Current"}
+            bold={""}
           ></ExperienceRight>
 
           <ExperienceLeft
             title={"Software Engineer Intern"}
             company={"daisee"}
-            description={
-              "Typescript, Python, React.js, Haskell, Postgresql, AWS"
-            }
+            // description={
+            //   "Typescript, Python, React.js, Haskell, Postgresql, AWS"
+            // }
             logo={daiseeLogo}
             date={"Nov 2023 - Dec 2024"}
-            bold={"Tech Stack:"}
+            // bold={"Tech Stack:"}
           ></ExperienceLeft>
 
           <ExperienceRight

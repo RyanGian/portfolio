@@ -57,10 +57,7 @@ const ExperienceRight = (props) => {
         variant="body2"
         style={{ fontSize: "1.4rem" }}
       >
-        <ScrollAnimation
-          animateIn="animate__animated animate__fadeInLeft"
-          delay={1000}
-        >
+        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
           <div className="animation-parent">
             {/* <div className="animate__animated animate__fadeInRight animate__delay-1s"> */}
             {props.date}
@@ -92,30 +89,31 @@ const ExperienceRight = (props) => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: "80px", px: 2 }}>
-        <ThemeProvider theme={theme}>
-          <Typography variant="h4" component="span">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
-              <div className="animation-parent">
-                {/* <div className="animate__animated animate__fadeInLeft"> */}
-                {props.title}
-                {/* </div> */}
-              </div>
-            </ScrollAnimation>
-          </Typography>
-        </ThemeProvider>
-
-        <ThemeProvider theme={theme}>
-          <Typography className="company-title" variant="h6">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+          <ThemeProvider theme={theme}>
+            <Typography className="company-name" variant="h4" component="span">
+              {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
               <div className="animation-parent">
                 {/* <div className="animate__animated animate__fadeInLeft"> */}
                 {props.company}
                 {/* </div> */}
               </div>
-            </ScrollAnimation>
-          </Typography>
-        </ThemeProvider>
+              {/* </ScrollAnimation> */}
+            </Typography>
+          </ThemeProvider>
 
+          <ThemeProvider theme={theme}>
+            <Typography className="company-title" variant="h6">
+              {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
+              <div className="animation-parent">
+                {/* <div className="animate__animated animate__fadeInLeft"> */}
+                {props.title}
+                {/* </div> */}
+              </div>
+              {/* </ScrollAnimation> */}
+            </Typography>
+          </ThemeProvider>
+        </ScrollAnimation>
         <Typography>
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

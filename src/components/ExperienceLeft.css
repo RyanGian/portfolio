@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
-.company-title {
+/* .company-title {
+  color: rgb(255, 215, 137);
+} */
+
+.company-name {
   color: rgb(255, 215, 137);
 }
