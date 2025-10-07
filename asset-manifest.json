@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.292cfc2b.css",
-    "main.js": "/static/js/main.ed385c6c.js",
+    "main.css": "/static/css/main.2d2c75e5.css",
+    "main.js": "/static/js/main.dfae1ebc.js",
     "static/js/651.22ef3892.chunk.js": "/static/js/651.22ef3892.chunk.js",
     "static/media/airbrb.png": "/static/media/airbrb.eb1afa8f4bc47fdd6bd4.png",
     "static/media/dungeon-mania.PNG": "/static/media/dungeon-mania.4878ecefb1f57e104fb0.PNG",
@@ -19,7 +19,6 @@
     "static/media/postgresql-icon.svg": "/static/media/postgresql-icon.6071f481ff80ecf206418e1c12227e61.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.75d7e9862123e2cfa80e6496db759e68.svg",
     "static/media/python-icon.svg": "/static/media/python-icon.de425a21783d8c28883bfbd5948723c5.svg",
-    "static/media/veridcode-logo.svg": "/static/media/veridcode-logo.cd7a419525726dbcabecc2238f78d78b.svg",
     "static/media/bash-icon.svg": "/static/media/bash-icon.9c68c947293b74a7b122019157dfd109.svg",
     "static/media/java-icon.svg": "/static/media/java-icon.71f24e83e19b34838cac50c6f55a15fe.svg",
     "static/media/javascript-icon.svg": "/static/media/javascript-icon.b54d0ecd66110d3973681666a0765dca.svg",
@@ -29,12 +28,12 @@
     "static/media/c-icon.svg": "/static/media/c-icon.f3c62e89382fe15bebcfab5789654960.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.3b77917d0e12e8e81ee053d3bf4b2a86.svg",
     "index.html": "/index.html",
-    "main.292cfc2b.css.map": "/static/css/main.292cfc2b.css.map",
-    "main.ed385c6c.js.map": "/static/js/main.ed385c6c.js.map",
+    "main.2d2c75e5.css.map": "/static/css/main.2d2c75e5.css.map",
+    "main.dfae1ebc.js.map": "/static/js/main.dfae1ebc.js.map",
     "651.22ef3892.chunk.js.map": "/static/js/651.22ef3892.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.292cfc2b.css",
-    "static/js/main.ed385c6c.js"
+    "static/css/main.2d2c75e5.css",
+    "static/js/main.dfae1ebc.js"
   ]
 }
