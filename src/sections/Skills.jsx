@@ -11,7 +11,7 @@ import cssLogo from "../assets/skillsIcons/css-icon.svg";
 import cplusplusLogo from "../assets/skillsIcons/cplusplus-icon.svg";
 import pythonLogo from "../assets/skillsIcons/python-icon.svg";
 // import bootstrapLogo from "../assets/skillsIcons/bootstrap-icon.svg";
-// import nodejsLogo from "../assets/skillsIcons/nodejs-icon.svg";
+import nodejsLogo from "../assets/skillsIcons/nodejs-icon.svg";
 // import flaskLogo from "../assets/skillsIcons/flask-icon.svg";
 // import materialuiLogo from "../assets/skillsIcons/materialui-icon.svg";
 // import arduinoLogo from "../assets/skillsIcons/arduino-icon.svg";
@@ -120,6 +120,7 @@ function Skills() {
         <SkillBox icon={javaLogo} skillText={"Java"} />
         <SkillBox icon={reactLogo} skillText={"React"} />
         <SkillBox icon={vueLogo} skillText={"Vue 3"} />
+        <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
         <SkillBox icon={postgresqlLogo} skillText={"PostgreSQL"} />
         <SkillBox icon={mongoDBLogo} skillText={"MongoDB"} />
         <SkillBox icon={bashLogo} skillText={"Shell"} />
@@ -128,7 +129,7 @@ function Skills() {
         {/* <SkillBox icon={cLogo} skillText={"C"} /> */}
         {/* <SkillBox icon={cplusplusLogo} skillText={"C++"} /> */}
         {/* <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
-         <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
+
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
         <SkillBox icon={flaskLogo} skillText={"Flask"} />
         <SkillBox icon={arduinoLogo} skillText={"Arduino"} />
