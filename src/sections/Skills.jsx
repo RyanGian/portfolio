@@ -119,7 +119,7 @@ function Skills() {
         <SkillBox icon={typescriptLogo} skillText={"TypeScript"} />
         <SkillBox icon={javaLogo} skillText={"Java"} />
         <SkillBox icon={reactLogo} skillText={"React"} />
-        <SkillBox icon={vueLogo} skillText={"Vue.Js 3"} />
+        <SkillBox icon={vueLogo} skillText={"Vue 3"} />
         <SkillBox icon={postgresqlLogo} skillText={"PostgreSQL"} />
         <SkillBox icon={mongoDBLogo} skillText={"MongoDB"} />
         <SkillBox icon={bashLogo} skillText={"Shell"} />
