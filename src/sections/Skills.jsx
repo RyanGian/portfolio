@@ -18,6 +18,10 @@ import pythonLogo from "../assets/skillsIcons/python-icon.svg";
 // import rLogo from "../assets/skillsIcons/r-icon.svg";
 import bashLogo from "../assets/skillsIcons/bash-icon.svg";
 import typescriptLogo from "../assets/skillsIcons/typescript-icon.svg";
+import mongoDBLogo from "../assets/skillsIcons/mongodb-icon.svg";
+import cSharpLogo from "../assets/skillsIcons/csharp-icon.svg";
+import vueLogo from "../assets/skillsIcons/vue-icon.svg";
+
 // import rustLogo from "../assets/skillsIcons/rust-icon.svg";
 import postgresqlLogo from "../assets/skillsIcons/postgresql-icon.svg";
 import SectionHeader from "../components/SectionHeader";
@@ -108,17 +112,21 @@ function Skills() {
       <SkillsText>Languages, and Tech I've used</SkillsText>
 
       <SkillsDisplayFlexbox>
+        <SkillBox icon={cSharpLogo} skillText={"C#"} />
+
         <SkillBox icon={pythonLogo} skillText={"Python"} />
-        <SkillBox icon={reactLogo} skillText={"React"} />
         <SkillBox icon={javascriptLogo} skillText={"Javascript"} />
         <SkillBox icon={typescriptLogo} skillText={"TypeScript"} />
-        <SkillBox icon={postgresqlLogo} skillText={"PostgreSQL"} />
         <SkillBox icon={javaLogo} skillText={"Java"} />
+        <SkillBox icon={reactLogo} skillText={"React"} />
+        <SkillBox icon={vueLogo} skillText={"Vue.Js 3"} />
+        <SkillBox icon={postgresqlLogo} skillText={"PostgreSQL"} />
+        <SkillBox icon={mongoDBLogo} skillText={"MongoDB"} />
+        <SkillBox icon={bashLogo} skillText={"Shell"} />
         <SkillBox icon={htmlLogo} skillText={"HTML"} />
         <SkillBox icon={cssLogo} skillText={"CSS"} />
-        <SkillBox icon={cLogo} skillText={"C"} />
-        <SkillBox icon={cplusplusLogo} skillText={"C++"} />
-
+        {/* <SkillBox icon={cLogo} skillText={"C"} /> */}
+        {/* <SkillBox icon={cplusplusLogo} skillText={"C++"} /> */}
         {/* <SkillBox icon={bootstrapLogo} skillText={"Bootstrap"} />
          <SkillBox icon={nodejsLogo} skillText={"Node.js"} />
         <SkillBox icon={materialuiLogo} skillText={"Material Ui"} />
@@ -128,7 +136,6 @@ function Skills() {
         {/* <SkillBox icon={} skillText={"Vue"} />
         <SkillBox icon={} skillText={"sass"} /> */}
         {/* <SkillBox icon={rustLogo} skillText={"Rust"} /> */}
-        <SkillBox icon={bashLogo} skillText={"Shell (Dash)"} />
       </SkillsDisplayFlexbox>
     </SkillsContainer>
   );
