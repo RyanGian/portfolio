@@ -57,7 +57,10 @@ const ExperienceRight = (props) => {
         variant="body2"
         style={{ fontSize: "1.4rem" }}
       >
-        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+        <ScrollAnimation
+          animateIn="animate__animated animate__fadeInLeft"
+          animateOnce={true}
+        >
           <div className="animation-parent">
             {/* <div className="animate__animated animate__fadeInRight animate__delay-1s"> */}
             {props.date}
@@ -89,7 +92,10 @@ const ExperienceRight = (props) => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: "80px", px: 2 }}>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+        <ScrollAnimation
+          animateIn="animate__animated animate__fadeInLeft"
+          animateOnce={true}
+        >
           <ThemeProvider theme={theme}>
             <Typography className="company-name" variant="h4" component="span">
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
@@ -128,7 +134,10 @@ const ExperienceRight = (props) => {
 
         <ThemeProvider theme={theme}>
           <Typography variant="h5">
-            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+            <ScrollAnimation
+              animateIn="animate__animated animate__fadeInLeft"
+              animateOnce={true}
+            >
               <div className="animation-parent">
                 {/* <div className="animate__animated animate__fadeInLeft"> */}
                 <b>{props.bold}</b> {props.description}

@@ -42,6 +42,7 @@ function Contact() {
       <ScrollAnimation
         animateOnce={false}
         animateIn="animate__fadeInUp"
+        animateOnce={true}
         delay={230}
       >
         <ContactText>

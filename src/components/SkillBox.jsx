@@ -9,6 +9,7 @@ function SkillBox(props) {
     <ScrollAnimation
       // animateOnce={false}
       animateIn="animate__fadeInLeft"
+      animateOnce={true}
       delay={230}
     >
       <div className="skill-box-container">

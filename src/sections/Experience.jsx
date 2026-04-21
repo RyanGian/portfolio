@@ -9,6 +9,7 @@ import ExperienceRight from "../components/ExperienceRight";
 
 import unswLogo from "../assets/experience-logos/unsw-logo.png";
 import CastawayForecastingLogo from "../assets/experience-logos/castaway-forecasting-logo.jpg";
+import learnosityLogo from "../assets/experience-logos/learnosity-logo.png";
 
 function Experience() {
   return (
@@ -17,12 +18,19 @@ function Experience() {
 
       <div className="timeline-container">
         <Timeline>
+          <ExperienceLeft
+            title={"Junior Software Engineer"}
+            company={"Learnosity"}
+            logo={learnosityLogo}
+            date={"April 2026 - Current"}
+          ></ExperienceLeft>
+
           <ExperienceRight
             title={"Junior Software Engineer"}
             company={"Castaway Forecasting"}
             description={""}
             logo={CastawayForecastingLogo}
-            date={"September 2025 - Current"}
+            date={"September 2025 - April 2026"}
             bold={""}
           ></ExperienceRight>
 
