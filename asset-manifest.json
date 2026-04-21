@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d2c75e5.css",
-    "main.js": "/static/js/main.a5cad222.js",
+    "main.js": "/static/js/main.8c99e406.js",
     "static/js/651.22ef3892.chunk.js": "/static/js/651.22ef3892.chunk.js",
     "static/media/airbrb.png": "/static/media/airbrb.eb1afa8f4bc47fdd6bd4.png",
     "static/media/dungeon-mania.PNG": "/static/media/dungeon-mania.4878ecefb1f57e104fb0.PNG",
@@ -30,11 +30,11 @@
     "index.html": "/index.html",
     "static/media/vue-icon.svg": "/static/media/vue-icon.0db1a83ce423cbc33f39114888393811.svg",
     "main.2d2c75e5.css.map": "/static/css/main.2d2c75e5.css.map",
-    "main.a5cad222.js.map": "/static/js/main.a5cad222.js.map",
+    "main.8c99e406.js.map": "/static/js/main.8c99e406.js.map",
     "651.22ef3892.chunk.js.map": "/static/js/651.22ef3892.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d2c75e5.css",
-    "static/js/main.a5cad222.js"
+    "static/js/main.8c99e406.js"
   ]
 }
